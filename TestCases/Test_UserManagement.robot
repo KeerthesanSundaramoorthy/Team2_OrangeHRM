@@ -34,7 +34,7 @@ Fill all the fields and click Search button
         Click the search button
         Verify the Valid Search
     
-    ELSE IF   '${Condition}'=='Partial'
+    ELSE IF   '${Condition}'=='Invalid'
         Enter the username    ${user}
         Select the Admin user role
         Click the search button

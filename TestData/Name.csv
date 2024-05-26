@@ -1,2 +1,5 @@
-*** Test Cases ***,${Username}
-Partial Field,Anujwq211263
+***Test Cases***,${condition},${job_Title},${job_Des},${job_Note}
+Valid,Valid,Carpen,Wood Works,Super Field
+Partial,Partial,Carpent		
+Cancel,Cancel,Carpente,Wood Works,Super Field
+

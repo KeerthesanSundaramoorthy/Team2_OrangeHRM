@@ -25,9 +25,6 @@ Fill the Login Form
     Input Text    ${us_name}    ${username}
     Input Password    ${pa_word}    ${password}
     Click Button    ${button}
-    
-Click the Admin button
-    Click Element    ${admin}
 
 Click the user management
     Wait Until Element Is Visible    ${user_management}
