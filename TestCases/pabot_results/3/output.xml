@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T01:07:48.199160" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="D:\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test Job" source="D:\Team2_OrangeHRM\TestCases\Test_Job.robot">
+<test id="s1-s1-t1" name="Add the new job" line="14">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:07:53.357714" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T01:07:53.357714" elapsed="7.952380"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:01.310094" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T01:08:01.310094" elapsed="1.581023"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T01:08:02.891117" elapsed="5.983802"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T01:08:08.876842" elapsed="0.010149"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:07:53.354702" elapsed="15.532289"/>
+</kw>
+<kw name="Add a new job">
+<kw name="Fill the Login Form" owner="User">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:08.889954" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>${us_name}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:08.889954" elapsed="1.657896"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:10.547850" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2024-05-28T01:08:10.610749" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${pa_word}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:10.547850" elapsed="0.171280"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:10.721767" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:10.719130" elapsed="1.733160"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2024-05-28T01:08:08.888500" elapsed="3.563790"/>
+</kw>
+<kw name="Click the Admin button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:12.461818" level="INFO">Clicking element 'css:a[href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<arg>${admin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:12.459354" elapsed="1.925803"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:12.452290" elapsed="1.932867"/>
+</kw>
+<kw name="Click the Job" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:14.386414" elapsed="0.586573"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:14.975354" level="INFO">Clicking element 'xpath=(//i[@class='oxd-icon bi-chevron-down']/ancestor::span)[2]'.</msg>
+<arg>${job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:14.973440" elapsed="0.090168"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:14.385157" elapsed="0.678451"/>
+</kw>
+<kw name="Click the Job Titles" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_titles}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:15.067805" elapsed="0.372291"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:15.440096" level="INFO">Clicking element 'xpath=(//ul[@class='oxd-dropdown-menu']//li)[1]'.</msg>
+<arg>${job_titles}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:15.440096" elapsed="0.519719"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:15.063608" elapsed="0.896207"/>
+</kw>
+<if>
+<branch type="IF" condition="'${condition}'=='Valid'">
+<kw name="Click the Add Button" owner="GenericResources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${add_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:15.960876" elapsed="0.471187"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:16.432063" level="INFO">Clicking button 'xpath=//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--secondary"]'.</msg>
+<arg>${add_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:16.432063" elapsed="0.564788"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:15.960876" elapsed="1.035975"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_text}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:16.996851" elapsed="0.406782"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:17.403633" level="INFO">Typing text 'Car' into text field 'xpath=(//div[@data-v-957b4417]//input)[1]'.</msg>
+<arg>${job_text}</arg>
+<arg>${Job_title}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:17.403633" elapsed="0.104134"/>
+</kw>
+<arg>${job_Title}</arg>
+<status status="PASS" start="2024-05-28T01:08:16.996851" elapsed="0.510916"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_desc}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:17.509768" elapsed="0.027651"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:17.538582" level="INFO">Typing text 'Wood Works' into text field 'xpath=(//div[@data-v-957b4417]//textarea)[1]'.</msg>
+<arg>${job_desc}</arg>
+<arg>${Job_des}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:17.538582" elapsed="0.099721"/>
+</kw>
+<arg>${job_Des}</arg>
+<status status="PASS" start="2024-05-28T01:08:17.507767" elapsed="0.131744"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${jb_note}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:17.640603" elapsed="0.020141"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:17.660744" level="INFO">Typing text 'Super Field' into text field 'xpath=(//div[@class='oxd-input-group oxd-input-field-bottom-space'])[4]//textarea'.</msg>
+<arg>${jb_note}</arg>
+<arg>${Job_Note}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:17.660744" elapsed="0.107111"/>
+</kw>
+<arg>${job_Note}</arg>
+<status status="PASS" start="2024-05-28T01:08:17.639511" elapsed="0.128344"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${save_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T01:08:17.768906" elapsed="0.028093"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:17.796999" level="INFO">Clicking button 'xpath=(//p[@class='oxd-text oxd-text--p orangehrm-form-hint']//following-sibling::button)[2]'.</msg>
+<arg>${save_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:17.796999" elapsed="0.070123"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:17.767855" elapsed="0.099267"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:17.869804" level="INFO">Verifying element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' contains exact text 'Successfully Saved'.</msg>
+<msg time="2024-05-28T01:08:23.105464" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T01:08:23.105464" level="FAIL">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</msg>
+<arg>${success_saved}</arg>
+<arg>Successfully Saved</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2024-05-28T01:08:17.868136" elapsed="5.243097">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T01:08:17.868136" elapsed="5.243097">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T01:08:15.959815" elapsed="7.151418">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Cancel'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:23.112988" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:23.112988" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<arg>${job_Des}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:23.112988" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<arg>${job_Note}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:23.112988" elapsed="0.001397"/>
+</kw>
+<kw name="Click the Cancel button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:23.114385" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the previous page" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:23.114385" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:08:23.111233" elapsed="0.003152"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Partial'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:23.114385" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:23.114385" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:23.114385" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:23.114385" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:08:23.114385" elapsed="0.002236"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Delete'">
+<kw name="Click the Delete Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:23.116621" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Yes Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:23.116621" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Job is deleted" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:23.116621" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:08:23.116621" elapsed="0.001077"/>
+</branch>
+<status status="FAIL" start="2024-05-28T01:08:15.959815" elapsed="7.157883">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</if>
+<arg>condition=Valid</arg>
+<arg>job_Title=Car</arg>
+<arg>job_Des=Wood Works</arg>
+<arg>job_Note=Super Field</arg>
+<status status="FAIL" start="2024-05-28T01:08:08.888500" elapsed="14.229198">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<kw name="Close the Browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T01:08:23.117698" elapsed="2.533447"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:23.117698" elapsed="2.533447"/>
+</kw>
+<doc>Verifies the new Job is added</doc>
+<status status="FAIL" start="2024-05-28T01:07:53.346152" elapsed="32.304993">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</test>
+<test id="s1-s1-t2" name="Add the new job" line="14">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:25.655039" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T01:08:25.655039" elapsed="2.090894"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:27.745933" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T01:08:27.745933" elapsed="1.671447"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T01:08:29.417886" elapsed="6.811762"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T01:08:36.229648" elapsed="0.001348"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:25.655039" elapsed="10.576964"/>
+</kw>
+<kw name="Add a new job">
+<kw name="Fill the Login Form" owner="User">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:36.236128" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>${us_name}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:36.234343" elapsed="2.393037"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:38.627380" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2024-05-28T01:08:38.673859" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${pa_word}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:38.627380" elapsed="0.124123"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:38.751503" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:38.751503" elapsed="0.097438"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2024-05-28T01:08:36.234343" elapsed="2.616043"/>
+</kw>
+<kw name="Click the Admin button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:38.851641" level="INFO">Clicking element 'css:a[href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<arg>${admin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:38.851641" elapsed="4.006859"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:38.850386" elapsed="4.008114"/>
+</kw>
+<kw name="Click the Job" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:42.860083" elapsed="0.512868"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:43.375340" level="INFO">Clicking element 'xpath=(//i[@class='oxd-icon bi-chevron-down']/ancestor::span)[2]'.</msg>
+<arg>${job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:43.375340" elapsed="0.052512"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:42.860083" elapsed="0.567769"/>
+</kw>
+<kw name="Click the Job Titles" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_titles}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:43.427852" elapsed="0.367732"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:43.796593" level="INFO">Clicking element 'xpath=(//ul[@class='oxd-dropdown-menu']//li)[1]'.</msg>
+<arg>${job_titles}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:43.795584" elapsed="0.499944"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:43.427852" elapsed="0.867676"/>
+</kw>
+<if>
+<branch type="IF" condition="'${condition}'=='Valid'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:44.296628" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:44.296628" elapsed="0.001391"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<arg>${job_Des}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<arg>${job_Note}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:08:44.296628" elapsed="0.001391"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Cancel'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<arg>${job_Des}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<arg>${job_Note}</arg>
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Cancel button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the previous page" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:08:44.298019" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Partial'">
+<kw name="Click the Add Button" owner="GenericResources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${add_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:44.301766" elapsed="0.846069"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:45.151143" level="INFO">Clicking button 'xpath=//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--secondary"]'.</msg>
+<arg>${add_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:45.147835" elapsed="1.464293"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:44.298019" elapsed="2.315606"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_text}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:08:46.613625" elapsed="1.288951"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:47.904240" level="INFO">Typing text 'Carpe' into text field 'xpath=(//div[@data-v-957b4417]//input)[1]'.</msg>
+<arg>${job_text}</arg>
+<arg>${Job_title}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:47.902576" elapsed="1.459550"/>
+</kw>
+<arg>${job_Title}</arg>
+<status status="PASS" start="2024-05-28T01:08:46.613625" elapsed="2.748501"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${save_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T01:08:49.362126" elapsed="0.418970"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:49.781096" level="INFO">Clicking button 'xpath=(//p[@class='oxd-text oxd-text--p orangehrm-form-hint']//following-sibling::button)[2]'.</msg>
+<arg>${save_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:08:49.781096" elapsed="0.360682"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:49.362126" elapsed="0.779652"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:08:50.141778" level="INFO">Verifying element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' contains exact text 'Successfully Saved'.</msg>
+<msg time="2024-05-28T01:08:55.801864" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T01:08:55.801864" level="FAIL">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</msg>
+<arg>${success_saved}</arg>
+<arg>Successfully Saved</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2024-05-28T01:08:50.141778" elapsed="5.660086">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T01:08:50.141778" elapsed="5.664124">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-28T01:08:44.298019" elapsed="11.507883">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Delete'">
+<kw name="Click the Delete Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:55.805902" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Yes Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:55.805902" elapsed="0.003044"/>
+</kw>
+<kw name="Verify the Job is deleted" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:08:55.809843" elapsed="0.000408"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:08:55.805902" elapsed="0.004349"/>
+</branch>
+<status status="FAIL" start="2024-05-28T01:08:44.296628" elapsed="11.513623">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</if>
+<arg>condition=Partial</arg>
+<arg>job_Title=Carpe</arg>
+<arg>job_Des=</arg>
+<arg>job_Note=</arg>
+<status status="FAIL" start="2024-05-28T01:08:36.232003" elapsed="19.578248">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<kw name="Close the Browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T01:08:55.813319" elapsed="5.813181"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:08:55.812254" elapsed="5.814246"/>
+</kw>
+<doc>Verifies the new Job is added</doc>
+<status status="FAIL" start="2024-05-28T01:08:25.652433" elapsed="35.974067">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</test>
+<test id="s1-s1-t3" name="Add the new job" line="14">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:01.629796" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T01:09:01.629796" elapsed="3.474748"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:05.104544" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T01:09:05.104544" elapsed="1.239531"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T01:09:06.345512" elapsed="10.374081"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T01:09:16.721300" elapsed="0.004525"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:01.629796" elapsed="15.096029"/>
+</kw>
+<kw name="Add a new job">
+<kw name="Fill the Login Form" owner="User">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:16.737759" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>${us_name}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:16.737759" elapsed="2.430894"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:19.169740" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2024-05-28T01:09:19.678059" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${pa_word}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:19.168653" elapsed="0.805472"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:19.975857" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:19.974125" elapsed="2.956382"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2024-05-28T01:09:16.737759" elapsed="6.192748"/>
+</kw>
+<kw name="Click the Admin button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:22.934017" level="INFO">Clicking element 'css:a[href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<arg>${admin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:22.930507" elapsed="2.049062"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:22.930507" elapsed="2.051075"/>
+</kw>
+<kw name="Click the Job" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:09:24.984431" elapsed="0.588095"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:25.572526" level="INFO">Clicking element 'xpath=(//i[@class='oxd-icon bi-chevron-down']/ancestor::span)[2]'.</msg>
+<arg>${job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:25.572526" elapsed="0.069590"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:24.981582" elapsed="0.660534"/>
+</kw>
+<kw name="Click the Job Titles" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_titles}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:09:25.642116" elapsed="0.394922"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:26.037038" level="INFO">Clicking element 'xpath=(//ul[@class='oxd-dropdown-menu']//li)[1]'.</msg>
+<arg>${job_titles}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:26.037038" elapsed="0.821458"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:25.642116" elapsed="1.216380"/>
+</kw>
+<if>
+<branch type="IF" condition="'${condition}'=='Valid'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:26.859614" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:26.859614" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<arg>${job_Des}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:26.859614" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<arg>${job_Note}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:26.859614" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:26.859614" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:26.859614" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:09:26.858496" elapsed="0.001118"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Cancel'">
+<kw name="Click the Add Button" owner="GenericResources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${add_button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:09:26.864122" elapsed="0.894880"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:27.761273" level="INFO">Clicking button 'xpath=//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--secondary"]'.</msg>
+<arg>${add_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:27.759002" elapsed="1.084486"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:26.864122" elapsed="1.980371"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_text}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:09:28.844493" elapsed="0.472779"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:29.317272" level="INFO">Typing text 'Cartk' into text field 'xpath=(//div[@data-v-957b4417]//input)[1]'.</msg>
+<arg>${job_text}</arg>
+<arg>${Job_title}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:29.317272" elapsed="0.213450"/>
+</kw>
+<arg>${job_Title}</arg>
+<status status="PASS" start="2024-05-28T01:09:28.844493" elapsed="0.686229"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_desc}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:09:29.534166" elapsed="0.029719"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:29.565611" level="INFO">Typing text 'Wood Works' into text field 'xpath=(//div[@data-v-957b4417]//textarea)[1]'.</msg>
+<arg>${job_desc}</arg>
+<arg>${Job_des}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:29.563885" elapsed="0.133185"/>
+</kw>
+<arg>${job_Des}</arg>
+<status status="PASS" start="2024-05-28T01:09:29.532781" elapsed="0.164289"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${jb_note}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:09:29.700820" elapsed="0.028266"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:29.732574" level="INFO">Typing text 'Super Field' into text field 'xpath=(//div[@class='oxd-input-group oxd-input-field-bottom-space'])[4]//textarea'.</msg>
+<arg>${jb_note}</arg>
+<arg>${Job_Note}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:29.729086" elapsed="0.114800"/>
+</kw>
+<arg>${job_Note}</arg>
+<status status="PASS" start="2024-05-28T01:09:29.698609" elapsed="0.145277"/>
+</kw>
+<kw name="Click the Cancel button" owner="Job">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:29.845396" level="INFO">Clicking button 'xpath=(//p[@class='oxd-text oxd-text--p orangehrm-form-hint']//following-sibling::button)[1]'.</msg>
+<arg>${cancel_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T01:09:29.843886" elapsed="0.701199"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:29.843886" elapsed="0.701199"/>
+</kw>
+<kw name="Verify the previous page" owner="Job">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:31.407623" level="INFO">Element 'xpath=(//i[@class='oxd-icon bi-trash'])[1]' is displayed.</msg>
+<arg>${trash}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T01:09:30.545085" elapsed="0.862538"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:30.545085" elapsed="0.862538"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:26.859614" elapsed="4.548009"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Partial'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:09:31.407623" elapsed="0.002347"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Delete'">
+<kw name="Click the Delete Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Yes Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Job is deleted" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:09:31.409970" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-05-28T01:09:26.858496" elapsed="4.551474"/>
+</if>
+<arg>condition=Cancel</arg>
+<arg>job_Title=Cartk</arg>
+<arg>job_Des=Wood Works</arg>
+<arg>job_Note=Super Field</arg>
+<status status="PASS" start="2024-05-28T01:09:16.736013" elapsed="14.673957"/>
+</kw>
+<kw name="Close the Browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T01:09:31.409970" elapsed="4.223599"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:31.409970" elapsed="4.223599"/>
+</kw>
+<doc>Verifies the new Job is added</doc>
+<status status="PASS" start="2024-05-28T01:09:01.628354" elapsed="34.013226"/>
+</test>
+<test id="s1-s1-t4" name="Add the new job" line="14">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:35.654050" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T01:09:35.654050" elapsed="2.854918"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:38.508968" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T01:09:38.508968" elapsed="3.662277"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T01:09:42.171245" elapsed="0.098497"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T01:09:42.269742" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:35.654050" elapsed="6.615692"/>
+</kw>
+<kw name="Add a new job">
+<kw name="Fill the Login Form" owner="User">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T01:09:42.272748" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<msg time="2024-05-28T01:09:47.506987" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T01:09:47.506987" level="FAIL">Element with locator 'xpath=//input[@placeholder='Username']' not found.</msg>
+<arg>${us_name}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T01:09:42.272748" elapsed="5.241299">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>${pa_word}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T01:09:47.514047" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T01:09:47.514047" elapsed="0.000000"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<status status="FAIL" start="2024-05-28T01:09:42.269742" elapsed="5.244305">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+</kw>
+<kw name="Click the Admin button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.514047" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Job" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:47.514047" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Job Titles" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:47.518626" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="'${condition}'=='Valid'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.518626" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:47.518626" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<arg>${job_Des}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:47.518626" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<arg>${job_Note}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:47.520138" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.520138" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.520138" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:09:47.518626" elapsed="0.001512"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Cancel'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Description" owner="Job">
+<arg>${job_Des}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Note" owner="Job">
+<arg>${job_Note}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Cancel button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the previous page" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:09:47.520138" elapsed="0.001009"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Partial'">
+<kw name="Click the Add Button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Job Title" owner="Job">
+<arg>${job_Title}</arg>
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the success message is displayed" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</branch>
+<branch type="ELSE IF" condition="'${condition}'=='Delete'">
+<kw name="Click the Delete Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Yes Button" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Job is deleted" owner="Job">
+<status status="NOT RUN" start="2024-05-28T01:09:47.527520" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-05-28T01:09:47.521147" elapsed="0.006373"/>
+</branch>
+<status status="NOT RUN" start="2024-05-28T01:09:47.518626" elapsed="0.008894"/>
+</if>
+<arg>condition=Delete</arg>
+<arg>job_Title=</arg>
+<arg>job_Des=</arg>
+<arg>job_Note=</arg>
+<status status="FAIL" start="2024-05-28T01:09:42.269742" elapsed="5.257778">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+</kw>
+<kw name="Close the Browser" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T01:09:47.529699" elapsed="2.558188"/>
+</kw>
+<status status="PASS" start="2024-05-28T01:09:47.528530" elapsed="2.559357"/>
+</kw>
+<doc>Verifies the new Job is added</doc>
+<status status="FAIL" start="2024-05-28T01:09:35.651393" elapsed="14.436494">Element with locator 'xpath=//input[@placeholder='Username']' not found.</status>
+</test>
+<doc>Verify the Job feature of the Admin</doc>
+<status status="FAIL" start="2024-05-28T01:07:48.256468" elapsed="121.832610"/>
+</suite>
+<status status="FAIL" start="2024-05-28T01:07:48.230491" elapsed="121.858587"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="3" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="3" skip="0" id="s1-s1" name="Test Job">TestCases.Test Job</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-28T01:08:25.652433" level="WARN">Multiple tests with name 'Add the new job' executed in suite 'TestCases.Test Job'.</msg>
+<msg time="2024-05-28T01:09:01.628354" level="WARN">Multiple tests with name 'Add the new job' executed in suite 'TestCases.Test Job'.</msg>
+<msg time="2024-05-28T01:09:35.649601" level="WARN">Multiple tests with name 'Add the new job' executed in suite 'TestCases.Test Job'.</msg>
+</errors>
+</robot>

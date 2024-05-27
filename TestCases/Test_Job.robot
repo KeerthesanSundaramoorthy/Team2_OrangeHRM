@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Verify the User Management feature of the Admin
+Documentation    Verify the Job feature of the Admin
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
 Test Teardown    Close the Browser
@@ -10,7 +10,10 @@ Resource    ../Resources/Job.robot
 Test Template    Add a new job
 
 *** Test Cases ***
-Add the new job    ${condition}    ${job_Title}    ${job_Des}    ${job_Note}
+
+Add the new job
+    [Documentation]     Verifies the new Job is added    
+    ${condition}    ${job_Title}    ${job_Des}    ${job_Note}
 
 *** Keywords ***
 Add a new job
@@ -19,14 +22,14 @@ Add a new job
     Click the Admin button
     Click the Job 
     Click the Job Titles
-    
+
     IF    '${condition}'=='Valid'
         Click the Add Button
         Enter the Job Title    ${job_Title}
         Enter the Job Description    ${job_Des}
         Enter the Job Note    ${job_Note}
         Click the Save button
-        Verify the job is added
+        Verify the success message is displayed 
 
     ELSE IF    '${condition}'=='Cancel'
         Click the Add Button
@@ -40,7 +43,7 @@ Add a new job
         Click the Add Button
         Enter the Job Title    ${job_Title}
         Click the Save button
-        Verify the job is added
+        Verify the success message is displayed
 
     ELSE IF    '${condition}'=='Delete'
         Click the Delete Button

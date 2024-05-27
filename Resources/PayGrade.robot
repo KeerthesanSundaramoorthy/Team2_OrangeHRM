@@ -16,6 +16,7 @@ Click the Pay Grade
 
 Enter the Pay Grade    
     [Arguments]    ${Pay_Grade_text}
+    Wait Until Element Is Visible    ${name_textbox}
     Input Text    ${name_textbox}    ${Pay_Grade_text}
 
 Verify the Pay Grade is added

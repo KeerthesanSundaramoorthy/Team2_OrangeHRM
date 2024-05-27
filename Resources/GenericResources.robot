@@ -7,10 +7,10 @@ Library    SeleniumLibrary
 ${browser}    Chrome
 ${url}    https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
 ${admin}    css:a[href="/web/index.php/admin/viewAdminModule"]
-${user_management}    xpath=//span[text()='User Management ']
+${user_management}    xpath=(//span[@class='oxd-topbar-body-nav-tab-item'])[1]
 ${save_button}    xpath=(//p[@class='oxd-text oxd-text--p orangehrm-form-hint']//following-sibling::button)[2]
 ${add_button}    xpath=//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--secondary"]
-${success_saved}    xpath=(//div[@class='oxd-toast-content oxd-toast-content--success']//p)[1]
+${success_saved}    xpath=(//div[@class='oxd-toast-start']//p)[2]
 
 
 *** Keywords ***
@@ -36,4 +36,4 @@ Click the Add Button
     Click Button    ${add_button}
 
 Verify the success message is displayed
-    Element Text Should Be    ${success_saved}    Success
+    Element Text Should Be    ${success_saved}    Successfully Saved

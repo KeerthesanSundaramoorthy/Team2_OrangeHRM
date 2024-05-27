@@ -1,0 +1,18 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Action :: Verifies the My Action feature of the Admin          
+==============================================================================
+Verify the Time at Work Feature :: Verifies the Punch out time pag... | PASS |
+------------------------------------------------------------------------------
+Verify the Pending review :: Verifies the My Review page is opened    | PASS |
+------------------------------------------------------------------------------
+Verify the Candidates review :: Verifies the Candidate page is opened | PASS |
+------------------------------------------------------------------------------
+TestCases.Test Action :: Verifies the My Action feature of the Admin  | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\10\output.xml

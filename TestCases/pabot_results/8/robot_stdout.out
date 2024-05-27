@@ -1,0 +1,56 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test UserManagement :: Verify the User Management feature of the ...
+==============================================================================
+Search the Users :: Search the Users with valid and invalid cases       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:12
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:19
+      Fill all the fields and click Search button    Condition=Valid    user=FMLName1    emp_name=FName Mname LName
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:25
+      '${Condition}' == 'Valid'    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:31
+      Verify the Valid Search    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\Resources\User.robot:79
+      Element Text Should Be    xpath=//div//span[text()='(1) Record Found']    (1) Record Found
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=//div//span[text()='(1) Record Found']' not found.
+------------------------------------------------------------------------------
+Search the Users :: Search the Users with valid and invalid cases     | PASS |
+------------------------------------------------------------------------------
+Search the Users :: Search the Users with valid and invalid cases       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:12
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:19
+      Fill all the fields and click Search button    Condition=Invalid    user=Anujwq211263    emp_name=
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:39
+      '${Condition}' == 'Invalid'    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:43
+      Verify the Invalid Search    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\Resources\User.robot:82
+      Element Text Should Be    xpath=(//span[@class='oxd-text oxd-text--span'])[1]    No Records Found
+______________________________________________________________________________
+| FAIL |
+The text of element 'xpath=(//span[@class='oxd-text oxd-text--span'])[1]' should have been 'No Records Found' but it was '(1) Record Found'.
+------------------------------------------------------------------------------
+TestCases.Test UserManagement :: Verify the User Management featur... | FAIL |
+3 tests, 1 passed, 2 failed
+==============================================================================
+TestCases                                                             | FAIL |
+3 tests, 1 passed, 2 failed
+==============================================================================
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\8\output.xml

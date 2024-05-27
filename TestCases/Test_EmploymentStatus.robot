@@ -11,7 +11,10 @@ Resource    ../Resources/Employment.robot
 Test Template   Add a Employment Status
 
 *** Test Cases ***
-Add the Employment Status    ${Employment_Status}
+Add the Employment Status    
+    [Tags]    Smoke
+    [Documentation]    Adds the new Employment Status for the user 
+    ${Employment_Status}
 
 *** Keywords ***
 Add a Employment Status 
