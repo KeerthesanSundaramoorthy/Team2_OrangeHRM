@@ -1,4 +1,3 @@
-
 *** Settings ***
 Documentation    Resource file with reusable keywords and variables
 Library    SeleniumLibrary
@@ -37,8 +36,4 @@ Click the Add Button
 
 Verify the success message is displayed
     Element Text Should Be    ${success_saved}    Success
-
-
-
-
 
