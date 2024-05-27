@@ -32,6 +32,9 @@ ${report_error}    No Records Found
 #delete
 ${delete_btn}    xpath://i[@class="oxd-icon bi-trash"]
 ${record_delete}    xpath://div[@class="orangehrm-container"]
+${yes_del_btn}    xpath: //button[text()='Yes,Delete']
+${success_deleted_msg}    xpath://p[text()='Successfully Deleted']
+
 
 *** Keywords ***
 Click on PIM Button
@@ -64,10 +67,7 @@ Dropdown functionality
     Wait Until Element Is Visible    xpath://span[text()='${emp}']    5s
     Click Element    xpath://span[text()='${emp}']
 
-Report generation
-    Click Element    ${report_name}
-    Wait Until Element Is Visible    ${report_name}    5s
-    Wait Until Element Is Enabled    ${report_name}    5s
+
 
 Fill the Employee Information with name and id
     
@@ -111,8 +111,14 @@ Fill reports name
 click on search button
     Click Button    ${Search}
 
-click on delete button
+Click on Delete Button
     Click Button    ${delete_btn}
 
 check for invalid message for report
     Element Should Be Visible    ${error_message}
+
+Click the Yes Button
+    Click Button    ${yes_del_btn}
+
+Verify the Employee is deleted
+    Element Should Be Visible    ${success_deleted_msg}

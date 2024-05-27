@@ -9,15 +9,22 @@ Resource    ../Resources/RecruitmentResources.robot
 Test Template    Vacancies
 
 *** Test Cases ***
-Vacancies    ${Job_Title}
+Vacancies by    ${Job_Title}	${Vacancy}    ${Hiring_Manager}    ${Status}	${Candidate_Name}	${Keywords}	    ${Date_Of_Application}    ${Date_Of_Application_To}    ${Hiring Manager}
+
 
 *** Keywords ***
 Vacancies
+    Input Text    xpath://input[@placeholder="Username"]    Admin
+    Input Password    xpath://input[@placeholder="Password"]    admin123
+    Click Button    xpath://button[@type='submit']
+    [Arguments]    ${Vacancy}    ${Status}
     RecruitmentResources.Click on Recruitment Icon
     RecruitmentResources.Click on Vacancies_button Icon
-    RecruitmentResources.Click on Job Title button
-    RecruitmentResources.Dropdown functionality    ${Job_Title}
-
+    RecruitmentResources.Click on vacancy button
+    RecruitmentResources.Dropdown functionality    ${vacancy}
+    RecruitmentResources.Click on status button
+    RecruitmentResources.Dropdown functionality   ${Status}
+    RecruitmentResources.Click on search button
 
 
 

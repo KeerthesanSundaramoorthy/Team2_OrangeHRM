@@ -13,6 +13,9 @@ Reports    ${reports}
 
 *** Keywords ***
 Reports 
+    Input Text    xpath://input[@placeholder="Username"]    Admin
+    Input Password    xpath://input[@placeholder="Password"]    admin123
+    Click Button    xpath://button[@type='submit']
     PIMResources.Click on PIM Button
     PIMResources.click on report field
     [Arguments]    ${report_name}
@@ -21,6 +24,9 @@ Reports
     PIMResources.click on search button
 
 Reports to reset the field
+    Input Text    xpath://input[@placeholder="Username"]    Admin
+    Input Password    xpath://input[@placeholder="Password"]    admin123
+    Click Button    xpath://button[@type='submit']
     PIMResources.Click on PIM Button
     PIMResources.click on report field
     [Arguments]    ${report_name}
@@ -29,9 +35,13 @@ Reports to reset the field
     PIMResources.Click on reset button
 
 Reports to check invalid field
+    Input Text    xpath://input[@placeholder="Username"]    Admin
+    Input Password    xpath://input[@placeholder="Password"]    admin123
+    Click Button    xpath://button[@type='submit']
     PIMResources.Click on PIM Button
     PIMResources.click on report field
-    [Arguments]    ${report_name}
+    [Arguments]    ${report_name}    ${Report}
     PIMResources.Fill reports name    ${report_name}
-    PIMResources.Dropdown functionality    No Records Found
+    PIMResources.Dropdown functionality    ${Report}
+    PIMResources.click on save button for invalid
     PIMResources.click on search button

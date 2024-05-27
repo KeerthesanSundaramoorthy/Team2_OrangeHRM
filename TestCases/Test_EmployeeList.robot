@@ -14,19 +14,21 @@ Employee Information    ${emp_name}    ${emp_id}    ${emp_status}    ${include} 
 *** Keywords ***
 
 Employee Information 
+    Input Text    xpath://input[@placeholder="Username"]    Admin
+    Input Password    xpath://input[@placeholder="Password"]    admin123
+    Click Button    xpath://button[@type='submit']
     PIMResources.Click on PIM Button
     PIMResources.click on Employee_list_button
     [Arguments]    ${Employee_Name}	${Employee_Id}	${Employee_Status}    ${Job_Title}    ${Sub_Unit}
     PIMResources.Fill the Employee Information with name and id   ${Employee_Name}    ${Employee_Id}	
     PIMResources.Fill the Employee Information with employee status 
     PIMResources.Dropdown functionality    ${Employee_Status}
-    PIMResources.Fill the Employee Information with job title
-    PIMResources.Dropdown functionality    ${Job_Title}
-    PIMResources.Fill the Employee Information with sub unit
-    PIMResources.Dropdown functionality    ${Sub_Unit}
     PIMResources.Click on search button
 
 Employee Information with name and id
+    Input Text    xpath://input[@placeholder="Username"]    Admin
+    Input Password    xpath://input[@placeholder="Password"]    admin123
+    Click Button    xpath://button[@type='submit']
     PIMResources.Click on PIM Button
     PIMResources.click on Employee_list_button
     [Arguments]    ${Employee_Name}	${Employee_Id}	${Employee_Status}    ${Job_Title}    ${Sub_Unit}

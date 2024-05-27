@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-27T09:41:29.957985" rpa="false" schemaversion="5">
+<suite id="s1" name="Test EmployeeList" source="E:\Git\Team2_OrangeHRM\TestCases\Test_EmployeeList.robot">
+<test id="s1-t1" name="Employee Information" line="12">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:31.004058" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T09:41:31.004058" elapsed="1.949129"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:32.954328" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T09:41:32.954328" elapsed="3.296739"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T09:41:36.251067" elapsed="0.034217"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T09:41:36.285284" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:31.004058" elapsed="5.285939"/>
+</kw>
+<kw name="Employee Information">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:36.292919" level="INFO">Typing text 'Admin' into text field 'xpath://input[@placeholder="Username"]'.</msg>
+<arg>xpath://input[@placeholder="Username"]</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:36.292919" elapsed="0.459756"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:36.752675" level="INFO">Typing password into text field 'xpath://input[@placeholder="Password"]'.</msg>
+<msg time="2024-05-27T09:41:36.791322" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@placeholder="Password"]</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:36.752675" elapsed="0.126378"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:36.879053" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:36.879053" elapsed="0.101810"/>
+</kw>
+<kw name="Click on PIM Button" owner="PIMResources">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T09:41:36.980863" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:36.980863" level="INFO">Clicking element 'xpath:(//span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"])[2]'.</msg>
+<arg>${PIM_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:36.980863" elapsed="2.852514"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:36.980863" elapsed="2.852514"/>
+</kw>
+<kw name="click on Employee_list_button" owner="PIMResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:39.834572" level="INFO">Clicking element 'xpath://a[text()='Employee List']'.</msg>
+<arg>${Employee_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:39.833377" elapsed="1.624160"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:39.833377" elapsed="1.624293"/>
+</kw>
+<kw name="Fill the Employee Information with name and id" owner="PIMResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:41.459046" level="INFO">Typing text 'Qwerty Qwerty LName' into text field 'xpath:(//input[@placeholder="Type for hints..."])'.</msg>
+<arg>${Employee_Name_Xpath}</arg>
+<arg>${emp_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:41.458023" elapsed="0.490441"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:41.948464" level="INFO">Typing text '1234' into text field 'xpath:(//input[@class="oxd-input oxd-input--active"])[2]'.</msg>
+<arg>${Employee_Id_Xpath}</arg>
+<arg>${emp_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:41.948464" elapsed="0.086920"/>
+</kw>
+<arg>${Employee_Name}</arg>
+<arg>${Employee_Id}</arg>
+<status status="PASS" start="2024-05-27T09:41:41.458023" elapsed="0.577361"/>
+</kw>
+<kw name="Fill the Employee Information with employee status" owner="PIMResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:42.035384" level="INFO">Clicking element 'xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])'.</msg>
+<arg>${Employee_Status_Dropdown}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:42.035384" elapsed="0.040653"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Employee_Status_Dropdown}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-27T09:41:42.076037" elapsed="0.020013"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${Employee_Status_Dropdown}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-27T09:41:42.096050" elapsed="0.020585"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:42.035384" elapsed="0.081251"/>
+</kw>
+<kw name="Dropdown functionality" owner="PIMResources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://span[text()='${emp}']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-27T09:41:42.116635" elapsed="0.019149"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:42.137061" level="INFO">Clicking element 'xpath://span[text()='']'.</msg>
+<arg>xpath://span[text()='${emp}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:42.137061" elapsed="0.987144"/>
+</kw>
+<arg>${Employee_Status}</arg>
+<status status="PASS" start="2024-05-27T09:41:42.116635" elapsed="1.007570"/>
+</kw>
+<kw name="click on search button" owner="PIMResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:43.126205" level="INFO">Clicking button 'xpath://button[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"]'.</msg>
+<arg>${Search}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:43.126205" elapsed="0.425942"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:43.125205" elapsed="0.426942"/>
+</kw>
+<arg>Employee_Name=Qwerty Qwerty LName</arg>
+<arg>Employee_Id=1234</arg>
+<arg>Employee_Status=</arg>
+<arg>Job_Title=</arg>
+<arg>Sub_Unit=</arg>
+<status status="PASS" start="2024-05-27T09:41:36.291916" elapsed="7.260231"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T09:41:43.552147" elapsed="2.303461"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:43.552147" elapsed="2.303461"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:31.004058" elapsed="14.851550"/>
+</test>
+<test id="s1-t2" name="Employee Information" line="12">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:45.855608" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T09:41:45.855608" elapsed="1.919835"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:47.775443" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T09:41:47.775443" elapsed="2.955574"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T09:41:50.732484" elapsed="0.026040"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T09:41:50.758524" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:45.855608" elapsed="4.902916"/>
+</kw>
+<kw name="Employee Information">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:50.765253" level="INFO">Typing text 'Admin' into text field 'xpath://input[@placeholder="Username"]'.</msg>
+<arg>xpath://input[@placeholder="Username"]</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:50.758524" elapsed="0.504611"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:51.263135" level="INFO">Typing password into text field 'xpath://input[@placeholder="Password"]'.</msg>
+<msg time="2024-05-27T09:41:51.307682" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@placeholder="Password"]</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:51.263135" elapsed="0.133821"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:51.397566" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:51.396956" elapsed="0.114711"/>
+</kw>
+<kw name="Click on PIM Button" owner="PIMResources">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T09:41:51.511667" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:51.511667" level="INFO">Clicking element 'xpath:(//span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"])[2]'.</msg>
+<arg>${PIM_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:51.511667" elapsed="2.888334"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:51.511667" elapsed="2.888334"/>
+</kw>
+<kw name="click on Employee_list_button" owner="PIMResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:54.402009" level="INFO">Clicking element 'xpath://a[text()='Employee List']'.</msg>
+<arg>${Employee_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:54.401008" elapsed="1.960484"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:54.401008" elapsed="1.960484"/>
+</kw>
+<kw name="Fill the Employee Information with name and id" owner="PIMResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:56.363434" level="INFO">Typing text 'Peter Mac Anderson' into text field 'xpath:(//input[@placeholder="Type for hints..."])'.</msg>
+<arg>${Employee_Name_Xpath}</arg>
+<arg>${emp_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:56.363434" elapsed="0.488076"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:56.851510" level="INFO">Typing text '7' into text field 'xpath:(//input[@class="oxd-input oxd-input--active"])[2]'.</msg>
+<arg>${Employee_Id_Xpath}</arg>
+<arg>${emp_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:56.851510" elapsed="0.082035"/>
+</kw>
+<arg>${Employee_Name}</arg>
+<arg>${Employee_Id}</arg>
+<status status="PASS" start="2024-05-27T09:41:56.362497" elapsed="0.571048"/>
+</kw>
+<kw name="Fill the Employee Information with employee status" owner="PIMResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:56.934550" level="INFO">Clicking element 'xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])'.</msg>
+<arg>${Employee_Status_Dropdown}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:56.934550" elapsed="0.043281"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Employee_Status_Dropdown}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-27T09:41:56.978854" elapsed="0.021176"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${Employee_Status_Dropdown}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-27T09:41:57.000030" elapsed="0.017267"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:56.933545" elapsed="0.083752"/>
+</kw>
+<kw name="Dropdown functionality" owner="PIMResources">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://span[text()='${emp}']</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-27T09:41:57.017297" elapsed="0.231574"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:57.250160" level="INFO">Clicking element 'xpath://span[text()='Full-Time Probation']'.</msg>
+<arg>xpath://span[text()='${emp}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:57.249001" elapsed="0.041255"/>
+</kw>
+<arg>${Employee_Status}</arg>
+<status status="PASS" start="2024-05-27T09:41:57.017297" elapsed="0.272959"/>
+</kw>
+<kw name="click on search button" owner="PIMResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-27T09:41:57.290256" level="INFO">Clicking button 'xpath://button[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"]'.</msg>
+<arg>${Search}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-27T09:41:57.290256" elapsed="0.058238"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:57.290256" elapsed="0.058238"/>
+</kw>
+<arg>Employee_Name=Peter Mac Anderson</arg>
+<arg>Employee_Id=7</arg>
+<arg>Employee_Status=Full-Time Probation</arg>
+<arg>Job_Title=Chief Financial Officer</arg>
+<arg>Sub_Unit=Administration</arg>
+<status status="PASS" start="2024-05-27T09:41:50.758524" elapsed="6.589970"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T09:41:57.348494" elapsed="2.278943"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:57.348494" elapsed="2.278943"/>
+</kw>
+<status status="PASS" start="2024-05-27T09:41:45.855608" elapsed="13.771829"/>
+</test>
+<doc>Test for Employee List</doc>
+<status status="PASS" start="2024-05-27T09:41:29.973499" elapsed="29.653938"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test EmployeeList">Test EmployeeList</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-27T09:41:45.855608" level="WARN">Multiple tests with name 'Employee Information' executed in suite 'Test EmployeeList'.</msg>
+</errors>
+</robot>
