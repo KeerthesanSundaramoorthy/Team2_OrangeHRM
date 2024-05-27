@@ -42,9 +42,6 @@ Enter the Job Note
 Click the Cancel button
     Click Button    ${cancel_button}
 
-Verify the job is added
-    Element Text Should Be    ${success_saved}    Success
-
 Verify the previous page
     Element Should Be Visible    ${trash}
 

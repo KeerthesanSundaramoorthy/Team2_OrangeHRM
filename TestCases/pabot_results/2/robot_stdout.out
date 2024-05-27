@@ -1,18 +1,16 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test LoginInvalid :: test invalid login to login page               
+TestCases.Test General :: Verify the General Information feature of the Org...
 ==============================================================================
-Login to form using                                                   | PASS |
+Verify the Text Box is enabled :: Verifies the text box is enabled    | PASS |
 ------------------------------------------------------------------------------
-Login to form using                                                   | PASS |
+Edit the Organization Name :: Verify the Organization name can be ... | PASS |
 ------------------------------------------------------------------------------
-Login to form using                                                   | PASS |
-------------------------------------------------------------------------------
-TestCases.Test LoginInvalid :: test invalid login to login page       | PASS |
-3 tests, 3 passed, 0 failed
+TestCases.Test General :: Verify the General Information feature o... | PASS |
+2 tests, 2 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
-3 tests, 3 passed, 0 failed
+2 tests, 2 passed, 0 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\2\output.xml
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\2\output.xml

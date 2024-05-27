@@ -1,14 +1,14 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test Search :: test search to dashboard page                        
+TestCases.Test Location :: Verify the Search feature of the Organization      
 ==============================================================================
-validate valid search credentials                                     | PASS |
+Search a Organization based on the Location :: Searches the Organi... | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test Search :: test search to dashboard page                | PASS |
+TestCases.Test Location :: Verify the Search feature of the Organi... | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\4\output.xml
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\4\output.xml

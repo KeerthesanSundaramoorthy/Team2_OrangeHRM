@@ -10,7 +10,10 @@ Resource    ../Resources/PayGrade.robot
 Test Template   Add a Pay Grade
 
 *** Test Cases ***
-Add the new Pay Grade    ${Pay_Grade}
+Add the new Pay Grade    
+    [Documentation]    Verifies the functions of the Pay Grade
+    [Tags]    Smoke
+    ${Pay_Grade}
 
 *** Keywords ***
 Add a Pay Grade 

@@ -7,6 +7,7 @@ Resource    ../Resources/GenericResources.robot
 ${nationalities}    xpath=//li[@class='oxd-topbar-body-nav-tab']/a
 ${nation_textbox}    xpath=(//input[@class='oxd-input oxd-input--active'])[2]
 ${existing}    xpath=//span[text()='Already exists']
+${assert}    xpath=(//div[@class='oxd-toast-start']//p)[2]
 
 *** Keywords ***
 Click the Nationalities
@@ -20,4 +21,8 @@ Enter the Nation Name
 
 Verify the existing message
     Element Text Should Be    ${existing}    Already exists
+
+Verify the new nation is added
+    Element Text Should Be    ${assert}    Successfully Saved
+
     

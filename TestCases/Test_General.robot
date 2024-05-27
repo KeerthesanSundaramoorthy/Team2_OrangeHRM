@@ -8,7 +8,10 @@ Resource    ../Resources/User.robot
 Resource    ../Resources/GenInfo.robot
 
 *** Test Cases ***
+
 Verify the Text Box is enabled    
+    [Documentation]    Verifies the text box is enabled
+    [Tags]    Smoke
     Fill the Login Form    Admin    admin123
     Click the Admin button
     Click the Organization
@@ -17,6 +20,8 @@ Verify the Text Box is enabled
     Verify the Text Box is enabled
 
 Edit the Organization Name
+    [Documentation]    Verify the Organization name can be editable 
+    [Tags]    Smoke
     Fill the Login Form    Admin    admin123
     Click the Admin button
     Click the Organization
@@ -24,5 +29,5 @@ Edit the Organization Name
     Click the Edit
     Enter the Organization Name
     Click Save button
-    Verify the success message is displayed
+    Verify the Organization name is changed
     

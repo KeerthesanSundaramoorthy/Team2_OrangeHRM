@@ -10,7 +10,10 @@ Resource    ../Resources/Nations.robot
 Test Template   Add the new Nation
 
 *** Test Cases ***
-Add a new Nation      ${condition}    ${nation_name} 
+Add a new Nation    
+    [Tags]    Retest
+    [Documentation]    Add a new Nation for the Organization with all the fields
+    ${condition}    ${nation_name} 
 
 *** Keywords ***
 Add the new Nation
@@ -22,8 +25,9 @@ Add the new Nation
     Enter the Nation Name    ${nation_name}
     Click the Save Button
     IF  '${condition}'=='new'
-        Verify the success message is displayed
+        Verify the new nation is added
 
     ELSE IF    '${condition}'=='existing'
         Verify the existing message
+
     END

@@ -1,35 +1,14 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test AddEmployee :: Test for Employee List                          
+TestCases.Test Pay :: Verify the Pay Grade feature of the Admin               
 ==============================================================================
-Add new Employee                                                      | PASS |
+Add the new Pay Grade :: Verifies the functions of the Pay Grade      | PASS |
 ------------------------------------------------------------------------------
-Add new Employee                                                        
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:13
-    T:  Add new Employee    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:20
-      Add new Employee    fname=aaa    mname=bbb    lname=ccc
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:31
-      click on save button    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\PIMResources.robot:101
-      Element Text Should Be    ${success_message}    Successfully Saved
-      |  ${success_message} = xpath://p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"] (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator 'xpath://p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"]' not found.
-------------------------------------------------------------------------------
-Add new Employee                                                      | PASS |
-------------------------------------------------------------------------------
-TestCases.Test AddEmployee :: Test for Employee List                  | FAIL |
-3 tests, 2 passed, 1 failed
+TestCases.Test Pay :: Verify the Pay Grade feature of the Admin       | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-TestCases                                                             | FAIL |
-3 tests, 2 passed, 1 failed
+TestCases                                                             | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\6\output.xml
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\6\output.xml

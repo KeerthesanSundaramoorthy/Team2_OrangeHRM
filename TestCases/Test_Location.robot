@@ -11,7 +11,10 @@ Resource    ../Resources/GenInfo.robot
 Test Template   Search a Organization
 
 *** Test Cases ***
-Search a Organization based on the Location    ${Name}   ${City}   
+Search a Organization based on the Location  
+    [Tags]    Smoke
+    [Documentation]    Searches the Organization list based on the Location  
+    ${Name}   ${City}   
 
 *** Keywords ***
 Search a Organization

@@ -10,7 +10,11 @@ Resource    ../Resources/Configurations.robot
 Test Template   Configuration of the Email
 
 *** Test Cases ***
-Configuring the email      ${send_email_id}    ${test_email_id}
+Configuring the email
+    [Tags]    Retest
+    [Documentation]    Configurages and Verifies the email is sent to the mail id
+    ${send_email_id}    ${test_email_id}
+
 
 *** Keywords ***
 Configuration of the Email
@@ -24,4 +28,4 @@ Configuration of the Email
     Enable the Send Test Mail
     Enter the Test Email id    ${test_email_id}
     Click the Save button
-    Verify the success message is displayed
+    Verify email is sent to mail id

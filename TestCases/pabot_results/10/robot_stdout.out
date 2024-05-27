@@ -1,16 +1,18 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test DeleteandEditRecord :: Test for Employee List                  
+TestCases.Test Action :: Verifies the My Action feature of the Admin          
 ==============================================================================
-Delete Employee                                                       | PASS |
+Verify the Time at Work Feature :: Verifies the Punch out time pag... | PASS |
 ------------------------------------------------------------------------------
-Edit Employee Details                                                 | PASS |
+Verify the Pending review :: Verifies the My Review page is opened    | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test DeleteandEditRecord :: Test for Employee List          | PASS |
-2 tests, 2 passed, 0 failed
+Verify the Candidates review :: Verifies the Candidate page is opened | PASS |
+------------------------------------------------------------------------------
+TestCases.Test Action :: Verifies the My Action feature of the Admin  | PASS |
+3 tests, 3 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
-2 tests, 2 passed, 0 failed
+3 tests, 3 passed, 0 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\10\output.xml
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\10\output.xml
