@@ -1,11 +1,11 @@
-#generic resources
+
 *** Settings ***
 Documentation    Resource file with reusable keywords and variables
 Library    SeleniumLibrary
 
 *** Variables ***
 ${browser}    Chrome
-${url}    https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+${url}      https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 ${admin}    css:a[href="/web/index.php/admin/viewAdminModule"]
 ${user_management}    xpath=//span[text()='User Management ']
 ${save_button}    xpath=(//p[@class='oxd-text oxd-text--p orangehrm-form-hint']//following-sibling::button)[2]
@@ -20,9 +20,9 @@ Open the Browser with URL
     Go To    ${url}
     Maximize Browser Window
     Set Selenium Implicit Wait    5
-
-Close the Browser
-    Close Browser
+    
+Close Browser Session
+      Close Browser
 
 Click the Admin button
     Click Element    ${admin}
@@ -37,3 +37,8 @@ Click the Add Button
 
 Verify the success message is displayed
     Element Text Should Be    ${success_saved}    Success
+
+
+
+
+
