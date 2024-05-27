@@ -1,0 +1,26 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test CandidateSearch :: Test for Candidate Search                   
+==============================================================================
+Candidte Search                                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot:14
+    T:  Candidte Search    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot:14
+      Candidate Search    ${Job_Title}
+      |  ${Job_Title} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}
+------------------------------------------------------------------------------
+TestCases.Test CandidateSearch :: Test for Candidate Search           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\7\output.xml

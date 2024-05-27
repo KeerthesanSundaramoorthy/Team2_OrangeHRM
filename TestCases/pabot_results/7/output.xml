@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-27T23:07:55.363902" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test CandidateSearch" source="E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot">
+<test id="s1-s1-t1" name="Candidte Search" line="14">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T23:07:58.290914" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T23:07:58.290914" elapsed="2.636017"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T23:08:00.926931" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T23:08:00.926931" elapsed="4.717395"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T23:08:05.644326" elapsed="0.254180"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T23:08:05.899511" elapsed="0.011273"/>
+</kw>
+<status status="PASS" start="2024-05-27T23:07:58.289914" elapsed="7.622339"/>
+</kw>
+<kw name="Candidate Search">
+<msg time="2024-05-27T23:08:05.921147" level="FAIL">Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}</msg>
+<arg>${Job_Title}</arg>
+<status status="FAIL" start="2024-05-27T23:08:05.913258" elapsed="0.008919">Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-27T23:08:05.925270" elapsed="4.060583"/>
+</kw>
+<status status="PASS" start="2024-05-27T23:08:05.924270" elapsed="4.061583"/>
+</kw>
+<status status="FAIL" start="2024-05-27T23:07:58.286927" elapsed="11.698926">Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}</status>
+</test>
+<doc>Test for Candidate Search</doc>
+<status status="FAIL" start="2024-05-27T23:07:55.423066" elapsed="14.565561"/>
+</suite>
+<status status="FAIL" start="2024-05-27T23:07:55.396623" elapsed="14.595192"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test CandidateSearch">TestCases.Test CandidateSearch</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-27T23:07:58.276948" level="ERROR">[ DataDriver ] Error in robot file:
+  File "E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot", line 0</msg>
+<msg time="2024-05-27T23:07:58.276948" level="ERROR">In source file:
+  File "../TestData/Candidate_Details.xlsx", line 0</msg>
+<msg time="2024-05-27T23:07:58.284483" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Worksheet named 'candidate' not found</msg>
+</errors>
+</robot>

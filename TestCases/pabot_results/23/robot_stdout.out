@@ -1,0 +1,40 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Nations :: Add the New Nationality of the Admin                
+==============================================================================
+Add a new Nation                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Nations.robot:13
+    T:  Add a new Nation    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Nations.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Add a new Nation                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Nations.robot:13
+    T:  Add a new Nation    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Nations.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+TestCases.Test Nations :: Add the New Nationality of the Admin        | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestCases                                                             | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\23\output.xml

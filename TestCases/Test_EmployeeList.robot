@@ -6,30 +6,37 @@ Test Setup    Open the Browser with URL
 Test Teardown    Close Browser Session
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/PIMResources.robot
+Resource    ../Resources/LoginResources.robot
+
+
 Test Template    Employee Information 
 
 *** Test Cases ***
 Employee Information    ${emp_name}    ${emp_id}    ${emp_status}    ${include}    ${sup_name}    ${job_title}    ${sub_unit}
 
+*** Variables ***
+${username}    Admin   
+${password}    admin123
+
 *** Keywords ***
 
-Employee Information 
+Employee Information
+    [Tags]    smoke
+    [Arguments]    ${Employee_Name}    ${Employee_Id}
+    LoginResources.Fill the login form    ${username}    ${password}
+    Set Selenium Implicit Wait    5
+    LoginResources.verify the valid credentials
     PIMResources.Click on PIM Button
     PIMResources.click on Employee_list_button
-    [Arguments]    ${Employee_Name}	${Employee_Id}	${Employee_Status}    ${Job_Title}    ${Sub_Unit}
-    PIMResources.Fill the Employee Information with name and id   ${Employee_Name}    ${Employee_Id}	
-    PIMResources.Fill the Employee Information with employee status 
-    PIMResources.Dropdown functionality    ${Employee_Status}
-    PIMResources.Fill the Employee Information with job title
-    PIMResources.Dropdown functionality    ${Job_Title}
-    PIMResources.Fill the Employee Information with sub unit
-    PIMResources.Dropdown functionality    ${Sub_Unit}
-    PIMResources.Click on search button
-
-Employee Information with name and id
-    PIMResources.Click on PIM Button
-    PIMResources.click on Employee_list_button
-    [Arguments]    ${Employee_Name}	${Employee_Id}	${Employee_Status}    ${Job_Title}    ${Sub_Unit}
     PIMResources.Fill the Employee Information with name and id   ${Employee_Name}    ${Employee_Id}
     PIMResources.Click on search button
+    ${count}    PIMResources.check the count of record
+    IF  '${count}'== '0'
+        Log To Console    ${count} Records found
+    ELSE
+        Log To Console    ${count} Records Found
+    
+    END
+
+
 

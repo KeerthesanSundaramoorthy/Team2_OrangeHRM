@@ -1,0 +1,40 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test General :: Verify the General Information feature of the Org...
+==============================================================================
+Verify the Text Box is enabled                                          
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_General.robot:11
+    T:  Verify the Text Box is enabled    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_General.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Edit the Organization Name                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_General.robot:19
+    T:  Edit the Organization Name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_General.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+TestCases.Test General :: Verify the General Information feature o... | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestCases                                                             | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\17\output.xml

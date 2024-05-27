@@ -1,10 +1,38 @@
-datasources:a410b79d1df1aa42e96ae70d345a4a1905c5563b
+datasources:5d2f34c2aef18fb508b1a32bf321890d203a2f4b
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:da6198961860efb568cb3a65dfec522ee838bf0d
+file:76e9fec81f19b7d64a858a3b4c19cf3062508466
 --suite TestCases.Test ChangePassword
 --suite TestCases.Test ForgotPassword
 --suite TestCases.Test LoginInvalid
 --suite TestCases.Test LoginValid
 --suite TestCases.Test Search
 --suite TestCases.Test logout
+--suite TestCases.Test AddEmployee
+--suite TestCases.Test CandidateSearch
+--suite TestCases.Test Configurations
+--suite TestCases.Test ContactDetails
+--suite TestCases.Test DeleteandEditRecord
+--suite TestCases.Test Depedent save
+--suite TestCases.Test EmergencyContact
+--suite TestCases.Test EmployeeLeaveList
+--suite TestCases.Test EmployeeList
+--suite TestCases.Test EmployeeListWithField
+--suite TestCases.Test EmploymentStatus
+--suite TestCases.Test General
+--suite TestCases.Test Immigration
+--suite TestCases.Test InvalidAddEmployee
+--suite TestCases.Test InvalidEmployeeDetails
+--suite TestCases.Test Job
+--suite TestCases.Test Location
+--suite TestCases.Test Nations
+--suite TestCases.Test Pay
+--suite TestCases.Test PersonalDetails
+--suite TestCases.Test Qualification
+--suite TestCases.Test QuickLaunch
+--suite TestCases.Test UserManagement
+--suite TestCases.Test UserManagement1
+--suite TestCases.Test Vacancy
+--suite TestCases.Test dependent cancel
+--suite TestCases.Test report
+--suite TestCases.Test validAddEmployee

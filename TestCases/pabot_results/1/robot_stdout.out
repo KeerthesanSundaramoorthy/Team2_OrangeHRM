@@ -13,4 +13,4 @@ TestCases.Test ForgotPassword :: test forgot password to login page   | PASS |
 TestCases                                                             | PASS |
 2 tests, 2 passed, 0 failed
 ==============================================================================
-Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml

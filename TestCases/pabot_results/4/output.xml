@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-24T07:36:44.439828" rpa="false" schemaversion="5">
-<suite id="s1" name="TestCases" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases">
-<suite id="s1-s1" name="Test Search" source="C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Search.robot">
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-27T23:07:26.235513" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test Search" source="E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Search.robot">
 <test id="s1-s1-t1" name="validate valid search credentials" line="18">
-<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:44.743584" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<arg>${browser_name}</arg>
+<msg time="2024-05-27T23:07:26.963345" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2024-05-24T07:36:44.743584" elapsed="4.440948"/>
+<status status="PASS" start="2024-05-27T23:07:26.962345" elapsed="3.004842"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:49.185532" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<msg time="2024-05-27T23:07:29.968188" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
 <arg>${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-05-24T07:36:49.184532" elapsed="0.904280"/>
+<status status="PASS" start="2024-05-27T23:07:29.967187" elapsed="12.858807"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-05-24T07:36:50.089810" elapsed="3.704334"/>
+<status status="PASS" start="2024-05-27T23:07:42.825994" elapsed="0.097106"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-24T07:36:53.795143" elapsed="0.010582"/>
+<status status="PASS" start="2024-05-27T23:07:42.923100" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-24T07:36:44.743584" elapsed="9.062141"/>
+<status status="PASS" start="2024-05-27T23:07:26.957063" elapsed="15.966037"/>
 </kw>
 <kw name="Fill the login form" owner="LoginResources">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:53.814728" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<msg time="2024-05-27T23:07:42.928161" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
 <arg>xpath://input[@name='username']</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T07:36:53.812722" elapsed="0.906082"/>
+<status status="PASS" start="2024-05-27T23:07:42.927158" elapsed="0.695318"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:54.720809" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
-<msg time="2024-05-24T07:36:54.887004" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-05-27T23:07:43.622476" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg time="2024-05-27T23:07:43.686971" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>xpath://input[@type='password']</arg>
 <arg>${Password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T07:36:54.719809" elapsed="0.424955"/>
+<status status="PASS" start="2024-05-27T23:07:43.622476" elapsed="0.189605"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:55.145759" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<msg time="2024-05-27T23:07:43.813088" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
 <arg>xpath://button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T07:36:55.144764" elapsed="0.143634"/>
+<status status="PASS" start="2024-05-27T23:07:43.812081" elapsed="1.576109"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2024-05-24T07:36:53.807754" elapsed="1.481691"/>
+<status status="PASS" start="2024-05-27T23:07:42.927158" elapsed="2.461032"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-24T07:36:55.290397" elapsed="0.005999"/>
+<status status="PASS" start="2024-05-27T23:07:45.388190" elapsed="0.004999"/>
 </kw>
 <kw name="verify the valid credentials" owner="LoginResources">
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:55.300518" level="INFO">Verifying element 'xpath://h6[text()="Dashboard"]' contains exact text 'Dashboard'.</msg>
+<msg time="2024-05-27T23:07:45.394903" level="INFO">Verifying element 'xpath://h6[text()="Dashboard"]' contains exact text 'Dashboard'.</msg>
 <arg>${dashBoard}</arg>
 <arg>Dashboard</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-05-24T07:36:55.298392" elapsed="1.960998"/>
+<status status="PASS" start="2024-05-27T23:07:45.393189" elapsed="0.499248"/>
 </kw>
-<status status="PASS" start="2024-05-24T07:36:55.297397" elapsed="1.961993"/>
+<status status="PASS" start="2024-05-27T23:07:45.393189" elapsed="0.499248"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:57.261392" level="INFO">Typing text 'Recruitment' into text field 'xpath://input[@placeholder="Search"]'.</msg>
+<msg time="2024-05-27T23:07:45.893443" level="INFO">Typing text 'Recruitment' into text field 'xpath://input[@placeholder="Search"]'.</msg>
 <arg>${search}</arg>
 <arg>Recruitment</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-24T07:36:57.260390" elapsed="1.649721"/>
+<status status="PASS" start="2024-05-27T23:07:45.893443" elapsed="0.264931"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-05-24T07:36:58.912108" level="INFO">Verifying element 'xpath://a[@href="/web/index.php/recruitment/viewRecruitmentModule"]' contains exact text 'Recruitment'.</msg>
+<msg time="2024-05-27T23:07:46.159374" level="INFO">Verifying element 'xpath://a[@href="/web/index.php/recruitment/viewRecruitmentModule"]' contains exact text 'Recruitment'.</msg>
 <arg>${Recruitment}</arg>
 <arg>Recruitment</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-05-24T07:36:58.911119" elapsed="0.293962"/>
+<status status="PASS" start="2024-05-27T23:07:46.158374" elapsed="0.254542"/>
 </kw>
 <kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-24T07:36:59.207594" elapsed="3.795406"/>
+<status status="PASS" start="2024-05-27T23:07:46.412916" elapsed="3.201793"/>
 </kw>
-<status status="PASS" start="2024-05-24T07:36:59.206079" elapsed="3.797889"/>
+<status status="PASS" start="2024-05-27T23:07:46.412916" elapsed="3.201793"/>
 </kw>
-<status status="PASS" start="2024-05-24T07:36:44.743584" elapsed="18.260384"/>
+<status status="PASS" start="2024-05-27T23:07:26.957063" elapsed="22.657646"/>
 </test>
 <doc>test search to dashboard page</doc>
-<status status="PASS" start="2024-05-24T07:36:44.483990" elapsed="18.520981"/>
+<status status="PASS" start="2024-05-27T23:07:26.318834" elapsed="23.296829"/>
 </suite>
-<status status="PASS" start="2024-05-24T07:36:44.456184" elapsed="18.550799"/>
+<status status="PASS" start="2024-05-27T23:07:26.276826" elapsed="23.480402"/>
 </suite>
 <statistics>
 <total>

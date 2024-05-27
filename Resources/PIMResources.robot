@@ -3,18 +3,24 @@ Documentation    The PIM page with objects and keywords
 Library    SeleniumLibrary
 
 *** Variables ***
-${count_record}    xpath://div[@class="orangehrm-container"]
+#count for employee list
+${count_record}    xpath://div[@class="oxd-table orangehrm-employee-list"]
+${No_record}    xpath://p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"]
+#Employee list
 ${Employee_list}    xpath://a[text()='Employee List']
 ${PIM_button}    xpath:(//span[@class="oxd-text oxd-text--span oxd-main-menu-item--name"])[2]
 ${Employee_Name_Xpath}    xpath:(//input[@placeholder="Type for hints..."])
+${Dropdown_xpath}    xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])[1]
 ${Employee_Id_Xpath}    xpath:(//input[@class="oxd-input oxd-input--active"])[2]
-${Employee_Status_Dropdown}    xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])
+${Status}    xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])[1]
 ${Include_Xpath}    xpath:(//div[@class="oxd-select-text-input"])[2]
-${Job_Title_Xpath}    xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])[2]
-${Sub_Unit_Xpath}    xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])[3]
+${Job_Title_Xpath}    xpath:(//div[@class="oxd-select-text oxd-select-text--active"][normalize-space()='-- Select --'])[1]
+${Sub_Unit_Xpath}    xpath:(//div[@class="oxd-select-text oxd-select-text--active"])[4]
 ${Reset}    xpath://button[@class="oxd-button oxd-button--medium oxd-button--ghost"]
 ${Search}    xpath://button[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"]
 ${error_message}    xpath://span[@class="oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message"]
+${success_message}    xpath://p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"]
+${Page_navigate}    xpath://h6[text()='PIM']
 
 #Add Employee
 ${Add_employee}    xpath://a[text()='Add Employee']
@@ -30,8 +36,12 @@ ${report_name}    xpath://input[@placeholder="Type for hints..."]
 ${report_error}    No Records Found
 
 #delete
-${delete_btn}    xpath://i[@class="oxd-icon bi-trash"]
-${record_delete}    xpath://div[@class="orangehrm-container"]
+${delete_btn}    xpath:(//button/i[@class="oxd-icon bi-trash"])[5]
+${yes_del_btn}    xpath:(//div[@class='orangehrm-modal-footer']//button)[2]
+${success_deleted}    xpath://p[text()='Successfully Deleted']
+
+#Edit
+${edit_btn}    xpath:(//i[@class="oxd-icon bi-pencil-fill"])[5]
 
 *** Keywords ***
 Click on PIM Button
@@ -44,21 +54,25 @@ click on Employee_list_button
 click on add_employee
     Click Element    ${Add_employee}
 
+#Employee Status
 Fill the Employee Information with employee status
-    Click Element    ${Employee_Status_Dropdown}
-    Wait Until Element Is Visible    ${Employee_Status_Dropdown}    5s
-    Wait Until Element Is Enabled    ${Employee_Status_Dropdown}    5s
+    Click Element    ${Status}
+    Wait Until Element Is Visible    ${Status}    5s
+    Wait Until Element Is Enabled    ${Status}    5s
     
-Fill the Employee Information with job title
-    Click Element    ${Job_Title_Xpath}
-    Wait Until Element Is Visible    ${Job_Title_Xpath}    5s
-    Wait Until Element Is Enabled    ${Job_Title_Xpath}    5s
-
+#Sub Unit
 Fill the Employee Information with sub unit
     Click Element    ${Sub_Unit_Xpath}
     Wait Until Element Is Visible    ${Sub_Unit_Xpath}    5s
     Wait Until Element Is Enabled    ${Sub_Unit_Xpath}    5s
 
+#Xpath
+Fill the Employee Information with xpath
+    Click Element    ${Dropdown_xpath}
+    Wait Until Element Is Visible    ${Dropdown_xpath}    5s
+    Wait Until Element Is Enabled    ${Dropdown_xpath}    5s
+
+#To select particular element
 Dropdown functionality
     [Arguments]    ${emp}
     Wait Until Element Is Visible    xpath://span[text()='${emp}']    5s
@@ -70,29 +84,31 @@ Report generation
     Wait Until Element Is Enabled    ${report_name}    5s
 
 Fill the Employee Information with name and id
-    
     [Arguments]    ${emp_name}    ${emp_id}    
     Input Text    ${Employee_Name_Xpath}    ${emp_name}
     Input Text    ${Employee_Id_Xpath}    ${emp_id}
-    
+
+#To add new employee
 Fill the details to add employee
     [Arguments]    ${fname}    ${mname}    ${lname}
     Input Text    ${first_name}    ${fname}
     Input Text    ${middle_name}    ${mname}
     Input Text    ${last_name}    ${lname}
 
+#To save the record
 click on save button 
     Click Button    ${save_btn}
-    Page Should Contain    Successfully Saved
+    Element Text Should Be    ${success_message}    Successfully Saved
 
+#To save the details using invalid
 click on save button for invalid
     Click Button    ${save_btn}
     Element Should Be Visible    ${error_message}
 
-Clickssss on search button
-    Click Button    ${Search}
+#Count the records
+check the count of record
     ${count}    Get Element Count    ${count_record}
-    Should Be Equal As Integers    ${count}    1
+    RETURN    ${count}
 
 Click on reset button
     Click Button    ${Reset}
@@ -100,19 +116,51 @@ Click on reset button
 click on cancel button
     Click Button    ${cancel_btn}
 
+#TO get report field
 click on report field
     Click Element    ${reports}
 
+#Fill Report Name
 Fill reports name
     [Arguments]    ${report}
     Input Text    ${report_name}    ${report}
 
-    
+#Search button
 click on search button
     Click Button    ${Search}
 
+#Delete Button
 click on delete button
-    Click Button    ${delete_btn}
+    Wait Until Element Is Visible    ${delete_btn}
+    Click Element    ${delete_btn}
 
+#Pop up yes button
+Click the Yes Button
+    Wait Until Element Is Visible    ${yes_del_btn}
+    Click Element    ${yes_del_btn}
+
+#Deleted Message
+Verify the employee is deleted
+    Element Should Be Visible    ${success_deleted}    Successfully Deleted
+
+#invalid error message is shown
 check for invalid message for report
     Element Should Be Visible    ${error_message}
+
+#Successfully saved message
+check for successful save 
+    Element Text Should Be    ${success_message}    Success
+
+#Page navigates
+check whether page navigates to Personal info
+    Element Text Should Be    ${Page_navigate}    PIM
+
+#No REcords Message
+check for invalid cases record
+    Element Text Should Be    ${No_record}    No Records Found
+
+#Edit button functionality
+click on edit button
+    Wait Until Element Is Visible    ${edit_btn}
+    Click Element    ${edit_btn}
+    Element Text Should Be    ${Page_navigate}    PIM

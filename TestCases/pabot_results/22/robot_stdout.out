@@ -1,0 +1,26 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Location :: Verify the Search feature of the Organization      
+==============================================================================
+Search a Organization based on the Location                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Location.robot:14
+    T:  Search a Organization based on the Location    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Location.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+TestCases.Test Location :: Verify the Search feature of the Organi... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\22\output.xml

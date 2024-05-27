@@ -6,13 +6,22 @@ Test Setup    Open the Browser with URL
 Test Teardown    Close Browser Session
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/PIMResources.robot
+Resource    ../Resources/LoginResources.robot
 Test Template      Invalid details for Add Employee
 
 *** Test Cases ***
 Invalid details for Add Employee    ${first_name}    ${middle_name}    ${last_name}
 
+*** Variables ***
+${username}    Admin   
+${password}    admin123
+
+
 *** Keywords ***
 Invalid details for Add Employee
+    [Tags]    UAT
+    LoginResources.Fill the login form    ${username}    ${password}
+    Set Selenium Implicit Wait    5
     PIMResources.Click on PIM Button
     PIMResources.click on add_employee
     [Arguments]    ${invalid_fname}	${invalid_mname}	${invalid_lname}    
@@ -20,3 +29,4 @@ Invalid details for Add Employee
     Wait Until Element Is Visible    ${save_btn}    4s
     PIMResources.click on save button for invalid
     Wait Until Element Is Visible    ${save_btn}    5s
+    PIMResources.check for invalid message for report

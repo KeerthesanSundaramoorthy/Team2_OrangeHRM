@@ -1,0 +1,119 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test UserManagement :: Verify the User Management feature of the ...
+==============================================================================
+Search the Users                                                      Inputting employee name: FName Mname LName
+Employee name input: FName Mname LName
+Pressed ARROW_DOWN key
+Pressed ENTER key
+Completed employee name input process
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:14
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:17
+      Fill all the fields and click Search button    Condition=Valid    user=FMLName1    emp_name=FName Mname LName
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:23
+      '${Condition}'=='Valid'    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:29
+      Verify the Valid Search    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\User.robot:79
+      Element Text Should Be    xpath=//div//span[text()='(1) Record Found']    (1) Record Found
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:14
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=//div//span[text()='(1) Record Found']' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Search the Users                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:14
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:17
+      Fill all the fields and click Search button    Condition=Partial    user=Anujwq211263    emp_name=
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:31
+      '${Condition}'=='Partial'    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:35
+      Verify the Valid Search    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\User.robot:79
+      Element Text Should Be    xpath=//div//span[text()='(1) Record Found']    (1) Record Found
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:14
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=//div//span[text()='(1) Record Found']' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Search the Users                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:14
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:17
+      Fill all the fields and click Search button    Condition=Invalid    user=Anujwq211263    emp_name=
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:37
+      '${Condition}'=='Invalid'    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:41
+      Verify the Invalid Search    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\User.robot:82
+      Element Text Should Be    xpath=//div//span[text()='(0) Record Found']    (0) Record Found
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:14
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=//div//span[text()='(0) Record Found']' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+TestCases.Test UserManagement :: Verify the User Management featur... | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+TestCases                                                             | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\28\output.xml

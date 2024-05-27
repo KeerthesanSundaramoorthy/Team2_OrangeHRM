@@ -1,0 +1,44 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Configurations :: Configuration of the Email by the Admin      
+==============================================================================
+Configuring the email                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Configurations.robot:13
+    T:  Configuring the email    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Configurations.robot:16
+      Configuration of the Email    send_email_id=admin@mail.com    test_email_id=admin@mail.com
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Configurations.robot:27
+      Verify the success message is displayed    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\GenericResources.robot:38
+      Element Text Should Be    ${success_saved}    Success
+      |  ${success_saved} = xpath=(//div[@class='oxd-toast-content oxd-toast-content--success']//p)[1] (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Configurations.robot:13
+    T:  Configuring the email    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Configurations.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=(//div[@class='oxd-toast-content oxd-toast-content--success']//p)[1]' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+TestCases.Test Configurations :: Configuration of the Email by the... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\8\output.xml

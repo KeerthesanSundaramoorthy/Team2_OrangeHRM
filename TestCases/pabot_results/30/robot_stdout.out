@@ -1,0 +1,28 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Vacancy :: Test for Recruitment                                
+==============================================================================
+Vacancies                                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Vacancy.robot:16
+    T:  Vacancies    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Vacancy.robot:23
+      Dropdown functionality    Account Assistant
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\RecruitmentResources.robot:29
+      Wait Until Element Is Visible    xpath://span[text()='${emp}']    5s
+      |  xpath://span[text()='${emp}'] = xpath://span[text()='Account Assistant'] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://span[text()='Account Assistant']' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestCases.Test Vacancy :: Test for Recruitment                        | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\30\output.xml

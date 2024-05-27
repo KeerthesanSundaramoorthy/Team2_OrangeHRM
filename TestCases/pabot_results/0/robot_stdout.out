@@ -3,16 +3,32 @@ TestCases
 ==============================================================================
 TestCases.Test ChangePassword :: test search to dashboard page                
 ==============================================================================
-validate successful change password                                   | PASS |
+validate successful change password                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_ChangePassword.robot:20
+    T:  validate successful change password    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_ChangePassword.robot:21
+      Fill the login form    ${username}    ${password}
+      |  ${username} = Admin (str)
+      |  ${password} = admin123 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\LoginResources.robot:16
+      Input Text    xpath://input[@name='username']    ${Username}
+      |  ${Username} = Admin (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath://input[@name='username']' not found.
 ------------------------------------------------------------------------------
 Verify invalid current password                                       | PASS |
 ------------------------------------------------------------------------------
 Verify invalid confirm password                                       | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test ChangePassword :: test search to dashboard page        | PASS |
-3 tests, 3 passed, 0 failed
+TestCases.Test ChangePassword :: test search to dashboard page        | FAIL |
+3 tests, 2 passed, 1 failed
 ==============================================================================
-TestCases                                                             | PASS |
-3 tests, 3 passed, 0 failed
+TestCases                                                             | FAIL |
+3 tests, 2 passed, 1 failed
 ==============================================================================
-Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\0\output.xml
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\0\output.xml

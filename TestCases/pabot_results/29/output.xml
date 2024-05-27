@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-27T23:13:11.414543" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test UserManagement1" source="E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot">
+<test id="s1-s1-t1" name="Search the Users" line="13">
+<kw name="Open the Browser with URL" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-27T23:13:12.491450" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-27T23:13:12.491450" elapsed="4.276021"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-27T23:13:16.771286" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-27T23:13:16.767471" elapsed="6.687303"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-27T23:13:23.456783" elapsed="0.171928"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-27T23:13:23.629702" elapsed="0.002517"/>
+</kw>
+<status status="PASS" start="2024-05-27T23:13:12.488840" elapsed="11.143379"/>
+</kw>
+<kw name="Fill Partially the fields and click Search button">
+<msg time="2024-05-27T23:13:23.633672" level="FAIL">Variable '${Username}' not found.</msg>
+<arg>${Username}</arg>
+<status status="FAIL" start="2024-05-27T23:13:23.632219" elapsed="0.001453">Variable '${Username}' not found.</status>
+</kw>
+<kw name="Close the Browser" type="TEARDOWN">
+<msg time="2024-05-27T23:13:23.643039" level="FAIL">No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</msg>
+<status status="FAIL" start="2024-05-27T23:13:23.643039" elapsed="0.000000">No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</status>
+</kw>
+<status status="FAIL" start="2024-05-27T23:13:12.485332" elapsed="11.157707">Variable '${Username}' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</status>
+</test>
+<doc>Verify the User Management feature of the Admin</doc>
+<status status="FAIL" start="2024-05-27T23:13:11.564271" elapsed="12.081604"/>
+</suite>
+<status status="FAIL" start="2024-05-27T23:13:11.482920" elapsed="12.163962"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Test UserManagement1">TestCases.Test UserManagement1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-27T23:13:12.467610" level="ERROR">Error in file 'E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot' on line 8: Resource file '..\Resources\AdminResource.robot' does not exist.</msg>
+<msg time="2024-05-27T23:13:12.480181" level="ERROR">[ DataDriver ] Error in robot file:
+  File "E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot", line 0</msg>
+<msg time="2024-05-27T23:13:12.480710" level="ERROR">In source file:
+  File "../TestData/Name.csv", line 3</msg>
+<msg time="2024-05-27T23:13:12.485332" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: IndexError: list index out of range</msg>
+</errors>
+</robot>
