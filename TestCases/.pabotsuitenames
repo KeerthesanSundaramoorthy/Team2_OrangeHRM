@@ -1,18 +1,16 @@
-datasources:1554a5bf29028d0bc6aa9a6d5131b711bd44589c
+datasources:634fcffb7225407d93a7c3b777bde5d32b2c3d15
 commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
 suitesfrom:no-suites-from-option
-file:0dd1cdee29f9a1747f8e57c7a55c0070c043fd81
---suite TestCases.Test Configurations
---suite TestCases.Test EmploymentStatus
---suite TestCases.Test General
---suite TestCases.Test Job
---suite TestCases.Test Location
---suite TestCases.Test Nations
---suite TestCases.Test Pay
---suite TestCases.Test Qualification
---suite TestCases.Test UserManagement
---suite TestCases.Test UserManagement1
---suite TestCases.Test Action
---suite TestCases.Test Man Membership
---suite TestCases.Test Man Qualification
---suite TestCases.Test Membership
+file:fe6ac0bb7704ec242776d774a00c279c0c1c3f01
+--suite TestCases.Test ChangePassword
+--suite TestCases.Test ForgotPassword
+--suite TestCases.Test LoginInvalid
+--suite TestCases.Test LoginValid
+--suite TestCases.Test Search
+--suite TestCases.Test logout
+--suite TestCases.Test ContactDetails
+--suite TestCases.Test Depedent save
+--suite TestCases.Test EmergencyContact
+--suite TestCases.Test Immigration
+--suite TestCases.Test PersonalDetails
+--suite TestCases.Test dependent cancel

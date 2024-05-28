@@ -2,8 +2,9 @@
 Documentation    Resource file with reusable keywords and variables
 Library    SeleniumLibrary
 
+
 *** Variables ***
-${browser}    Chrome
+${browser_name}    Chrome
 ${url}      https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 ${admin}    css:a[href="/web/index.php/admin/viewAdminModule"]
 ${user_management}    xpath=(//span[@class='oxd-topbar-body-nav-tab-item'])[1]
@@ -12,14 +13,15 @@ ${add_button}    xpath=//button[@type="button"][@class="oxd-button oxd-button--m
 ${success_saved}    xpath=(//div[@class='oxd-toast-start']//p)[2]
 
 
-*** Keywords ***
-Open the Browser with URL
-    Create Webdriver    Chrome
-    #Open Browser    ${url}    
-    Go To    ${url}
-    Maximize Browser Window
-    Set Selenium Implicit Wait    5
-    
+*** Keywords ***    
+#To open the browser with url
+Open the browser with url
+     Create Webdriver   ${browser_name}
+     Go to       ${url}
+     Maximize Browser Window
+     Set Selenium Implicit Wait     5
+
+#To close the browser
 Close Browser Session
       Close Browser
 
