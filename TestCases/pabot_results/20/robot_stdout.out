@@ -1,0 +1,16 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test InvalidEmployeeDetails :: Test for Employee List               
+==============================================================================
+Employee Information with All fields except sub unit                  | PASS |
+------------------------------------------------------------------------------
+Employee Information with All fields except sub unit                  | PASS |
+------------------------------------------------------------------------------
+TestCases.Test InvalidEmployeeDetails :: Test for Employee List       | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\20\output.xml

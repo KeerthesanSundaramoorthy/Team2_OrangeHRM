@@ -16,7 +16,7 @@ ${other_email}    xpath:(//div[@data-v-957b4417]/input)[10]
 ${save}           xpath://button[@type="submit"]
 ${success_save}   xpath://p[text()='Successfully Updated']
 ${drop_down}      xpath://div[@data-v-67d2aedf]
-${country}        xpath://span[text()='Albania']
+${country}        xpath://span[text()='Aruba']
 
 
 *** Keywords ***

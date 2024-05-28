@@ -1,0 +1,58 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Immigration :: to validate login form                          
+==============================================================================
+Valid                                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:18
+    T:  Valid    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:21
+      validate successful saved Dependent    Number=1234    Status=Active    Comment=Good
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:29
+      Fill the details    ${Number}    ${Status}    ${Comment}
+      |  ${Number} = 1234 (str)
+      |  ${Status} = <Unable to define variable value>
+      |  ${Comment} = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\ImmigrationResources.robot:19
+      Input Text    ${Number}    ${number}
+      |  ${Number} = 1234 (str)
+      |  ${number} = 1234 (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '1234' not found.
+------------------------------------------------------------------------------
+Invalid                                                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:18
+    T:  Invalid    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:21
+      validate successful saved Dependent    Number=1317    Status=Deactive    Comment=Ok
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:29
+      Fill the details    ${Number}    ${Status}    ${Comment}
+      |  ${Number} = 1317 (str)
+      |  ${Status} = <Unable to define variable value>
+      |  ${Comment} = <Unable to define variable value>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\ImmigrationResources.robot:19
+      Input Text    ${Number}    ${number}
+      |  ${Number} = 1317 (str)
+      |  ${number} = 1317 (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator '1317' not found.
+------------------------------------------------------------------------------
+TestCases.Test Immigration :: to validate login form                  | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+TestCases                                                             | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\18\output.xml

@@ -22,6 +22,7 @@ verify the valid credentials
     Element Text Should Be    ${dashBoard}    Dashboard
     #Element Text Should Be    ${PIM}    PIM
 
+
 #To verify invalid credentials
 verify the invalid credentials
     ${result}    Get Text    ${error_msg}

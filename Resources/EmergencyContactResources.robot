@@ -47,3 +47,4 @@ Click delete Button
     Set Selenium Implicit Wait    3s
     Click Button    ${delete}
     Element Text Should Be    ${sure}    Are you Sure?    
+

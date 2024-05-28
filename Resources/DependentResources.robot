@@ -7,7 +7,6 @@ ${add}                xpath:(//button[@type="button"])[3]
 ${Name}               xpath:(//input[@data-v-1f99f73c])[2]
 ${Relationship}       xpath:(//div[@data-v-67d2aedf])[2]
 ${DOB}                xpath:(//input[@data-v-1f99f73c])[2]
-${calendar}           xpath://input[@placeholder="yyyy-dd-mm"]
 ${save}               xpath:(//button[text()=" Save "])[1]
 ${success_save}       xpath://p[text()='Successfully Updated']
 ${child}              xpath://span[text()='Child']
@@ -19,7 +18,7 @@ ${cancel}             xpath:(//button[@type="button"])[3]
 Fill the details
     [Arguments]    ${names}      
     Input Text    ${Name}     ${names}
-        
+    
 #Select relationship as child
 select relationship as child
     Click Element    ${Relationship}

@@ -1,16 +1,31 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test ForgotPassword :: Test forgot page to my login page            
+TestCases.Test EmploymentStatus :: Verify the Employment Status feature of ...
 ==============================================================================
-validate successful reset password                                    | PASS |
+Add the Employment Status :: Adds the new Employment Status for th...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:14
+    T:  Add the Employment Status    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:20
+      Add a Employment Status    Employment_Status=Part Timess
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:29
+      Verify the Employment Status is added    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\Resources\Employment.robot:21
+      Element Text Should Be    ${assert}    Successfully Saved
+      |  ${assert} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+The text of element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' should have been 'Successfully Saved' but it was ''.
 ------------------------------------------------------------------------------
-validate successful cancel reset password                             | PASS |
-------------------------------------------------------------------------------
-TestCases.Test ForgotPassword :: Test forgot page to my login page    | PASS |
-2 tests, 2 passed, 0 failed
+TestCases.Test EmploymentStatus :: Verify the Employment Status fe... | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-TestCases                                                             | PASS |
-2 tests, 2 passed, 0 failed
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  C:\Users\SM\Downloads\orange\orange\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml
