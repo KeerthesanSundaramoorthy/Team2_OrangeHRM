@@ -1,3 +1,0 @@
-*** Test Cases ***,${Number},${Status},${Comment}
-Valid,1234,Active,Good
-Invalid,1317,Deactive,Ok

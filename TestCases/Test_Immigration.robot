@@ -1,7 +1,7 @@
 *** Settings ***
-Documentation    to validate login form
+Documentation    Test Immigration to my info page
 Library    SeleniumLibrary
-Library    DataDriver    file=../TestData/Immigration.csv    encoding=utf_8    dialect=unix
+Library    DataDriver    file=../TestData/ImmigrationData.csv    encoding=utf_8    dialect=unix
 Resource             ../Resources/GenericResources.robot
 Resource             ../Resources/LoginResources.robot
 Resource             ../Resources/ImmigrationResources.robot
@@ -15,17 +15,18 @@ ${username}    Admin
 ${password}    admin123
 
 *** Test Cases ***
-Fill dependent    ${Number}    ${Status}    ${Comment}
+Fill dependent    ${Num}   
 
 *** Keywords ***
+#To validate successful saved dependent
 validate successful saved Dependent
-    [Arguments]     ${Number}   ${Status}    ${Comment}  
+    [Arguments]     ${Num}    
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
     LoginResources.verify the valid credentials
     MyInfoResource.click myInfo Button
-    MyInfoResource.click dependent element
+    MyInfoResource.click immigration element
     ImmigrationResources.click add button
-    ImmigrationResources.Fill the details   ${Number}    ${Status}    ${Comment}  
+    ImmigrationResources.Fill the details   ${Num}      
     ImmigrationResources.select country
     ImmigrationResources.Click Save Button

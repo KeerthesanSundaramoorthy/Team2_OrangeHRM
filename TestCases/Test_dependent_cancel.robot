@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    to validate login form
+Documentation    Test dependent to my info
 Library    SeleniumLibrary
 Library    DataDriver    file=../TestData/DependentData.csv    encoding=utf_8    dialect=unix
 Resource             ../Resources/GenericResources.robot
@@ -18,6 +18,7 @@ ${password}    admin123
 Fill dependent    ${Name}
 
 *** Keywords ***
+#To validate successful cancel dependent
 validate successful cancel dependent
     [Arguments]     ${Name}    
     LoginResources.Fill the login form    ${username}    ${password}
