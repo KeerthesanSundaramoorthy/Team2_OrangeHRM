@@ -1,0 +1,21 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test DeleteandEditRecord :: Test for Delete and e...
+==============================================================================
+Delete Employee                                                       | PASS |
+------------------------------------------------------------------------------
+Edit Employee Details                                                 | PASS |
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test DeleteandEditRecord :: Test for Del... | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM                                                       | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\6\output.xml
