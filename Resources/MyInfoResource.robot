@@ -18,7 +18,7 @@ ${immigration}          xpath://a[text()='Immigration']
 ${qualification}        xpath://a[text()='Qualifications']
 #${qualification}       Javascript return document.querySelectorAll('a[data-v-84c8a174]')[8]
 ${membership}           xpath://a[text()='Memberships']
-#${membership}          Javascript return document.querySelectorAll('a[data-v-84c8a174]')[9] 
+#${membership}          Javascript return document.querySelectorAll('a[data-v-84c8a174]')[9]
 
 *** Keywords ***
 #To click myInfo button

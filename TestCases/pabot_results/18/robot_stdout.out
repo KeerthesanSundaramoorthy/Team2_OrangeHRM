@@ -1,58 +1,88 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test Immigration :: to validate login form                          
+TestCases.Test Job :: Verify the Job feature of the Admin                     
 ==============================================================================
-Valid                                                                   
+Add the new job :: Verifies the new Job is added                        
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:18
-    T:  Valid    
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:14
+    T:  Add the new job    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:21
-      validate successful saved Dependent    Number=1234    Status=Active    Comment=Good
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:20
+      Add a new job    condition=Valid    job_Title=Carqqqq    job_Des=Wood Works    job_Note=Super Field
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:29
-      Fill the details    ${Number}    ${Status}    ${Comment}
-      |  ${Number} = 1234 (str)
-      |  ${Status} = <Unable to define variable value>
-      |  ${Comment} = <Unable to define variable value>
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:24
+      Click the Job    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\ImmigrationResources.robot:19
-      Input Text    ${Number}    ${number}
-      |  ${Number} = 1234 (str)
-      |  ${number} = 1234 (str)
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Job.robot:20
+      Wait Until Element Is Visible    ${job}
+      |  ${job} = xpath=(//div[@class='oxd-topbar-body toggled']//span)[2] (str)
 ______________________________________________________________________________
 | FAIL |
-Element with locator '1234' not found.
+Element 'xpath=(//div[@class='oxd-topbar-body toggled']//span)[2]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-Invalid                                                                 
+Add the new job :: Verifies the new Job is added                        
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:18
-    T:  Invalid    
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:14
+    T:  Add the new job    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:21
-      validate successful saved Dependent    Number=1317    Status=Deactive    Comment=Ok
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:20
+      Add a new job    condition=Partial    job_Title=dzfd    job_Des=    job_Note=
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Immigration.robot:29
-      Fill the details    ${Number}    ${Status}    ${Comment}
-      |  ${Number} = 1317 (str)
-      |  ${Status} = <Unable to define variable value>
-      |  ${Comment} = <Unable to define variable value>
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:24
+      Click the Job    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\ImmigrationResources.robot:19
-      Input Text    ${Number}    ${number}
-      |  ${Number} = 1317 (str)
-      |  ${number} = 1317 (str)
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Job.robot:20
+      Wait Until Element Is Visible    ${job}
+      |  ${job} = xpath=(//div[@class='oxd-topbar-body toggled']//span)[2] (str)
 ______________________________________________________________________________
 | FAIL |
-Element with locator '1317' not found.
+Element 'xpath=(//div[@class='oxd-topbar-body toggled']//span)[2]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-TestCases.Test Immigration :: to validate login form                  | FAIL |
-2 tests, 0 passed, 2 failed
+Add the new job :: Verifies the new Job is added                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:14
+    T:  Add the new job    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:20
+      Add a new job    condition=Cancel    job_Title=Cartkfzgdddg    job_Des=Wood Works    job_Note=Super Field
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:24
+      Click the Job    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Job.robot:20
+      Wait Until Element Is Visible    ${job}
+      |  ${job} = xpath=(//div[@class='oxd-topbar-body toggled']//span)[2] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=(//div[@class='oxd-topbar-body toggled']//span)[2]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Add the new job :: Verifies the new Job is added                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:14
+    T:  Add the new job    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:20
+      Add a new job    condition=Delete    job_Title=    job_Des=    job_Note=
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Job.robot:24
+      Click the Job    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Job.robot:20
+      Wait Until Element Is Visible    ${job}
+      |  ${job} = xpath=(//div[@class='oxd-topbar-body toggled']//span)[2] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=(//div[@class='oxd-topbar-body toggled']//span)[2]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestCases.Test Job :: Verify the Job feature of the Admin             | FAIL |
+4 tests, 0 passed, 4 failed
 ==============================================================================
 TestCases                                                             | FAIL |
-2 tests, 0 passed, 2 failed
+4 tests, 0 passed, 4 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\18\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\18\output.xml

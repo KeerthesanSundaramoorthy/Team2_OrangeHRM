@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 
 
 *** Variables ***
-${recruitment_icon}    xpath:(//a[@class="oxd-main-menu-item"])[5]
+${recruitment_icon}    xpath:(//li[@class="oxd-main-menu-item-wrapper"]//span)[5]
 ${vacancies_icon}    xpath://a[text()='Vacancies']
 
 
@@ -19,9 +19,11 @@ ${Xpath_Vacancy}    xpath:(//div[@class="oxd-select-text oxd-select-text--active
 
 *** Keywords ***
 Click on Recruitment Icon
-    Click Link    ${recruitment_icon}
+    Wait Until Element Is Visible    ${recruitment_icon}    5s
+    Click Element    ${recruitment_icon}
 
 Click on Vacancies_button Icon
+    Wait Until Element Is Visible    ${vacancies_icon}    5s
     Click Element    ${vacancies_icon}
 
 Dropdown functionality
@@ -30,6 +32,7 @@ Dropdown functionality
     Click Element    xpath://span[text()='${emp}']
 
 click on candidate icon
+    Wait Until Element Is Visible    ${Candidate_icon}    5s
     Click Element    ${Candidate_icon}
 
 click on xpath to search candidate

@@ -5,12 +5,14 @@ Library    DataDriver    file=../TestData/LoginData.xlsx    sheet_name=loginInva
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/LoginResources.robot
 Task Setup    Open the browser with url
-Test Teardown    close browser session
+Test Teardown    Close Browser Session
 Test Template    validate unsuccessful login using invalid username
 
 
 *** Test Cases ***
-Login to form using    ${username}    ${password}
+Login to form using    
+    [Tags]    Regression
+    ${username}    ${password}
  
 
 *** Keywords ***

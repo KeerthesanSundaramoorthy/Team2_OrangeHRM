@@ -1,14 +1,39 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test Immigration :: to validate login form                          
+<<<<<<< Updated upstream
+TestCases.Test UserManagement1 :: Verify the User Management feature of the...
 ==============================================================================
-Valid                                                                 | PASS |
+Search the Users                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:13
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:13
+      Fill Partially the fields and click Search button    ${Username}
+      |  ${Username} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${Username}' not found.
 ------------------------------------------------------------------------------
-TestCases.Test Immigration :: to validate login form                  | PASS |
-1 test, 1 passed, 0 failed
+TestCases.Test UserManagement1 :: Verify the User Management featu... | FAIL |
+1 test, 0 passed, 1 failed
+=======
+TestCases.Test EmployeeLeaveList :: Test for Recruitment in employees on leave
 ==============================================================================
-TestCases                                                             | PASS |
+List the employess on leave                                           0 Employees on leave
+| PASS |
+------------------------------------------------------------------------------
+TestCases.Test EmployeeLeaveList :: Test for Recruitment in employ... | PASS |
 1 test, 1 passed, 0 failed
+>>>>>>> Stashed changes
 ==============================================================================
-Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\9\output.xml
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+<<<<<<< Updated upstream
+Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\9\output.xml
+=======
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\9\output.xml
+>>>>>>> Stashed changes

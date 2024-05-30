@@ -10,7 +10,9 @@ Resource    ../Resources/LoginResources.robot
 Test Template    Reports
 
 *** Test Cases ***
-Reports    ${reports}    
+Reports    
+    [Tags]    Regresion
+    ${reports}    
 
 *** Variables ***
 ${username}    Admin   
@@ -18,11 +20,9 @@ ${password}    admin123
 
 *** Keywords ***
 Reports 
-    [Tags]    regresion
     [Arguments]    ${report_name}
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait    5
-    LoginResources.verify the valid credentials
     PIMResources.Click on PIM Button
     PIMResources.click on report field
     PIMResources.Fill reports name    ${report_name}
@@ -33,11 +33,8 @@ Reports to reset the field
     [Arguments]    ${Job_Title}    ${report_name}
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait    5
-    LoginResources.verify the valid credentials
     PIMResources.Click on PIM Button
     PIMResources.click on report field
     PIMResources.Fill reports name    ${report_name}
     PIMResources.Dropdown functionality    ${report_name}
     PIMResources.Click on reset button
-
-

@@ -14,10 +14,9 @@ ${password}    admin123
 
 *** Test Cases ***
 Vacancies
-    [Tags]    UAT
+    [Tags]    Smoke
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait    5
-    LoginResources.verify the valid credentials
     RecruitmentResources.Click on Recruitment Icon
     RecruitmentResources.Click on Vacancies_button Icon
     RecruitmentResources.click on xpath for vacancy

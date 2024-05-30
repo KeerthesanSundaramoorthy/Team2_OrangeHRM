@@ -15,12 +15,13 @@ ${username}    Admin
 ${password}    admin123
 
 *** Test Cases ***
-Fill dependent    ${Num}   
+Fill dependent    
+    [Tags]    Smoke
+    ${Num}   
 
 *** Keywords ***
 #To validate successful saved dependent
 validate successful saved Dependent
-    [Tags]    Smoke
     [Arguments]    ${Num}
     Run Keyword And Ignore Error    LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait    5
@@ -31,4 +32,3 @@ validate successful saved Dependent
     Run Keyword And Ignore Error    ImmigrationResources.Fill the details    ${Num}
     Run Keyword And Ignore Error    ImmigrationResources.select country
     Run Keyword And Ignore Error    ImmigrationResources.Click Save Button
-    

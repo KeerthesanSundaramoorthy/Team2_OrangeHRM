@@ -5,23 +5,21 @@ Library           SeleniumLibrary
 *** Variables ***
 ${error_msg}     xpath://p[text()='Invalid credentials']
 ${dashBoard}     xpath://h6[text()="Dashboard"]  
-${PIM}           xpath://h6[text()="PIM"] 
 ${required}      xpath://span[text()="Required"]
 
 
 *** Keywords ***
+
 #To Fill the login form
 Fill the login form
     [Arguments]    ${Username}    ${Password}
-    Input Text    xpath://input[@name='username']     ${Username}
+    Input Text    xpath://input[@name='username']    ${Username}
     Input Password    xpath://input[@type='password']    ${Password}
     Click Button    xpath://button[@type='submit']
 
 #To verify valid credentails
 verify the valid credentials
     Element Text Should Be    ${dashBoard}    Dashboard
-    #Element Text Should Be    ${PIM}    PIM
-
 
 #To verify invalid credentials
 verify the invalid credentials

@@ -31,5 +31,3 @@ validate successful saved personal details
     EmergencyContactResources.click add button
     EmergencyContactResources.Fill the details to mandatory field    ${NAMES}    ${RELATION}    ${HOMES}    
     EmergencyContactResources.Click Save Button
-
-

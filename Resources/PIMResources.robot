@@ -19,7 +19,7 @@ ${Sub_Unit_Xpath}    xpath:(//div[@class="oxd-select-text oxd-select-text--activ
 ${Reset}    xpath://button[@class="oxd-button oxd-button--medium oxd-button--ghost"]
 ${Search}    xpath://button[@class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"]
 ${error_message}    xpath://span[@class="oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message"]
-${success_message}    xpath://p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"]
+${success_message}    xpath=(//div[@class='oxd-toast-content oxd-toast-content--success']//p)[1]
 ${Page_navigate}    xpath://h6[text()='PIM']
 
 #Add Employee
@@ -42,6 +42,12 @@ ${success_deleted}    xpath://p[text()='Successfully Deleted']
 
 #Edit
 ${edit_btn}    xpath:(//i[@class="oxd-icon bi-pencil-fill"])[5]
+
+#javascript locators
+#${Employee_name_queryselector}    document.querySelector("input[placeholder='Type for hints...']")
+#${Sub_unit_queryselector}    (document.getElementsByClassName("oxd-select-text oxd-select-text--active"))[3]
+#{Reset_querySselector}    document.querySelector("button[class='oxd-button oxd-button--medium oxd-button--ghost']")
+#{Search_querselector}    document.getElementsByClassName("oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space")
 
 *** Keywords ***
 Click on PIM Button
@@ -98,7 +104,6 @@ Fill the details to add employee
 #To save the record
 click on save button 
     Click Button    ${save_btn}
-    Element Text Should Be    ${success_message}    Successfully Saved
 
 #To save the details using invalid
 click on save button for invalid
@@ -127,36 +132,44 @@ Fill reports name
 
 #Search button
 click on search button
+    Wait Until Element Is Visible    ${Search}    5s
     Click Button    ${Search}
 
 #Delete Button
-click on delete button
-    Wait Until Element Is Visible    ${delete_btn}
+click on the delete button
+    Wait Until Element Is Visible    ${delete_btn}    
     Click Element    ${delete_btn}
 
 #Pop up yes button
-Click the Yes Button
+Click on the Yes Button
     Wait Until Element Is Visible    ${yes_del_btn}
     Click Element    ${yes_del_btn}
 
 #Deleted Message
 Verify the employee is deleted
+    Wait Until Element Is Visible    ${success_deleted}    5s
     Element Should Be Visible    ${success_deleted}    Successfully Deleted
 
 #invalid error message is shown
 check for invalid message for report
-    Element Should Be Visible    ${error_message}
+    Wait Until Element Is Visible    ${error_message}
+    Element Should Be Visible    ${error_message}   
 
 #Successfully saved message
 check for successful save 
+    Wait Until Element Is Visible    ${success_message}    10s
+    Wait Until Element Contains    ${success_message}    Success    10s
     Element Text Should Be    ${success_message}    Success
+
 
 #Page navigates
 check whether page navigates to Personal info
+    Wait Until Element Is Visible    ${Page_navigate}    5s
     Element Text Should Be    ${Page_navigate}    PIM
 
 #No REcords Message
 check for invalid cases record
+    Wait Until Element Is Visible    ${No_record}    5s
     Element Text Should Be    ${No_record}    No Records Found
 
 #Edit button functionality

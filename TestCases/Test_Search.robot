@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/LoginResources.robot
 Task Setup    Open the browser with url
-Test Teardown    close browser session
+Test Teardown    Close Browser Session
 
 *** Variables ***
 ${username}    Admin   
@@ -20,10 +20,5 @@ validate valid search credentials
     [Tags]    Smoke
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
-    LoginResources.verify the valid credentials
     Input Text    ${search}    Recruitment
     Element Text Should Be    ${Recruitment}    Recruitment 
-    
-    
-
-

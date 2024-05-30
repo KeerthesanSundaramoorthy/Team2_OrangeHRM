@@ -5,7 +5,9 @@ Resource    ../Resources/GenericResources.robot
 
 *** Variables ***
 ${my_info}    css:a[href="/web/index.php/pim/viewMyDetails"]
+#${my_info}    document.querySelector("a[href='/web/index.php/pim/viewMyDetails']")
 ${qualifications}    css:a[href="/web/index.php/pim/viewQualifications/empNumber/7"]
+#${qualifications}    document.querySelector("a[href='/web/index.php/pim/viewQualifications/empNumber/7']")
 ${company_name}    xpath=(//input[@class='oxd-input oxd-input--active'])[2]
 ${job_title}    xpath:(//input[@class="oxd-input oxd-input--active"])[2]
 ${from_date}    xpath=(//input[@placeholder='yyyy-dd-mm'])[1]

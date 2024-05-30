@@ -10,6 +10,7 @@ ${city_loc}    xpath=(//div[@data-v-957b4417]//input)[2]
 ${country_loc}    xpath=(//div[@class='oxd-select-text oxd-select-text--active'][normalize-space()='-- Select --'])[1]
 ${country}    xpath=//span[text()='United States']
 ${verify}    xpath=//span[text()='(1) Record Found']
+${search_button}    xpath=//button[text()=' Search '] 
 
 
 *** Keywords ***
@@ -28,3 +29,7 @@ Fill the Form
 
 Verify the Search result
     Element Text Should Be    ${verify}    (1) Record Found
+
+Click the search button
+    Wait Until Element Is Visible    ${search_button}
+    Click Button    ${search_button}

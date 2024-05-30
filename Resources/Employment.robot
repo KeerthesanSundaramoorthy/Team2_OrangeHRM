@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 *** Variables ***
 ${employment}    xpath=(//ul[@class='oxd-dropdown-menu']//li)[3]
 ${employ_textbox}    xpath=//div[@class='oxd-input-group__label-wrapper']/following-sibling::div//input
-${assert}    xpath=(//div[@class='oxd-toast-start']//p)[2]
+${assert}    xpath=(//div[@class='oxd-toast-content oxd-toast-content--success']//p)[2]
 
 *** Keywords ***
 Click the Employment Status
@@ -15,9 +15,9 @@ Click the Employment Status
 
 Enter the Employment Status   
     [Arguments]    ${employ_text}
+    Wait Until Element Is Visible    ${employ_textbox}
     Input Text    ${employ_textbox}    ${employ_text}
 
 Verify the Employment Status is added
+    Wait Until Element Is Visible    ${assert}    10s
     Element Text Should Be    ${assert}    Successfully Saved
-
-

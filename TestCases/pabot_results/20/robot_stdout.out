@@ -1,16 +1,18 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test InvalidEmployeeDetails :: Test for Employee List               
+TestCases.Test LoginInvalid :: test invalid login to login page               
 ==============================================================================
-Employee Information with All fields except sub unit                  | PASS |
+Login to form using                                                   | PASS |
 ------------------------------------------------------------------------------
-Employee Information with All fields except sub unit                  | PASS |
+Login to form using                                                   | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test InvalidEmployeeDetails :: Test for Employee List       | PASS |
-2 tests, 2 passed, 0 failed
+Login to form using                                                   | PASS |
+------------------------------------------------------------------------------
+TestCases.Test LoginInvalid :: test invalid login to login page       | PASS |
+3 tests, 3 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
-2 tests, 2 passed, 0 failed
+3 tests, 3 passed, 0 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\20\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\20\output.xml

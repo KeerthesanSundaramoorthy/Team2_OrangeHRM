@@ -1,38 +1,22 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test UserManagement1 :: Verify the User Management feature of the...
+TestCases.Test QuickLaunch :: Test for QuickLaunch on dashboard               
 ==============================================================================
-Search the Users                                                        
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:13
-    T:  Search the Users    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:13
-      Fill Partially the fields and click Search button    ${Username}
-      |  ${Username} = <Unable to define variable value>
-______________________________________________________________________________
-  
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:13
-    T:  Search the Users    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:5
-      Close the Browser    
-______________________________________________________________________________
-| FAIL |
-Variable '${Username}' not found.
-
-Also teardown failed:
-No keyword with name 'Close the Browser' found. Did you mean:
-    SeleniumLibrary.Close Browser
+Assign_leave                                                          | PASS |
 ------------------------------------------------------------------------------
-TestCases.Test UserManagement1 :: Verify the User Management featu... | FAIL |
-1 test, 0 passed, 1 failed
+Leave_List                                                            | PASS |
+------------------------------------------------------------------------------
+TimeSheets                                                            | PASS |
+------------------------------------------------------------------------------
+Apply_Leave                                                           | PASS |
+------------------------------------------------------------------------------
+My_Leave                                                              | PASS |
+------------------------------------------------------------------------------
+TestCases.Test QuickLaunch :: Test for QuickLaunch on dashboard       | PASS |
+5 tests, 5 passed, 0 failed
 ==============================================================================
-TestCases                                                             | FAIL |
-1 test, 0 passed, 1 failed
+TestCases                                                             | PASS |
+5 tests, 5 passed, 0 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\29\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\29\output.xml

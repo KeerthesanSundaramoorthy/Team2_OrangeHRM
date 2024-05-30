@@ -1,31 +1,32 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test EmploymentStatus :: Verify the Employment Status feature of ...
+TestCases.Test Action :: Verifies the My Action feature of the Admin          
 ==============================================================================
-Add the Employment Status :: Adds the new Employment Status for th...   
+Verify the Time at Work Feature :: Verifies the Punch out time pag... | PASS |
+------------------------------------------------------------------------------
+Verify the Pending review :: Verifies the My Review page is opened      
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:14
-    T:  Add the Employment Status    
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Action.robot:19
+    T:  Verify the Pending review    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:20
-      Add a Employment Status    Employment_Status=Part Timess
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Action.robot:23
+      Click the Pending self review    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:29
-      Verify the Employment Status is added    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\Resources\Employment.robot:21
-      Element Text Should Be    ${assert}    Successfully Saved
-      |  ${assert} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Dashboard.robot:23
+      Wait Until Element Is Visible    ${pending}
+      |  ${pending} = xpath=(//div[@class='orangehrm-todo-list']//p)[1] (str)
 ______________________________________________________________________________
 | FAIL |
-The text of element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' should have been 'Successfully Saved' but it was ''.
+Element 'xpath=(//div[@class='orangehrm-todo-list']//p)[1]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-TestCases.Test EmploymentStatus :: Verify the Employment Status fe... | FAIL |
-1 test, 0 passed, 1 failed
+Verify the Candidates review :: Verifies the Candidate page is opened | PASS |
+------------------------------------------------------------------------------
+TestCases.Test Action :: Verifies the My Action feature of the Admin  | FAIL |
+3 tests, 2 passed, 1 failed
 ==============================================================================
 TestCases                                                             | FAIL |
-1 test, 0 passed, 1 failed
+3 tests, 2 passed, 1 failed
 ==============================================================================
-Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml

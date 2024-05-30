@@ -20,14 +20,14 @@ Verify the Punch out page is opened
     Page Should Contain Element    ${punch_out}    Punch Out
 
 Click the Pending self review
-    Wait Until Element Is Visible    ${pending}
+    Wait Until Element Is Visible    ${pending}    10s
     Click Element    ${pending}
 
 Verify the Performance Page is opened
     Page Should Contain Element    ${my_review}    My Review
 
 Click the remaining candidates review
-    Wait Until Element Is Visible    ${review}
+    Wait Until Element Is Visible    ${review}    10s
     Click Element    ${review}
 
 Verify the Recruitment Page is opened

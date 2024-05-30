@@ -1,35 +1,15 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test validAddEmployee :: Test to add new Employee                   
+TestCases.Test Vacancy :: Test for Vacancy                                    
 ==============================================================================
-Add Employee                                                            
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:14
-    T:  Add Employee    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:24
-      Add Employee    fname=AZX    mname=BYZ    lname=ZCV
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:33
-      click on save button    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\Resources\PIMResources.robot:101
-      Element Text Should Be    ${success_message}    Successfully Saved
-      |  ${success_message} = xpath://p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"] (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator 'xpath://p[@class="oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text"]' not found.
+Vacancies                                                             0 Records found
+| PASS |
 ------------------------------------------------------------------------------
-Add Employee                                                          | PASS |
-------------------------------------------------------------------------------
-Add Employee                                                          | PASS |
-------------------------------------------------------------------------------
-TestCases.Test validAddEmployee :: Test to add new Employee           | FAIL |
-3 tests, 2 passed, 1 failed
+TestCases.Test Vacancy :: Test for Vacancy                            | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-TestCases                                                             | FAIL |
-3 tests, 2 passed, 1 failed
+TestCases                                                             | PASS |
+1 test, 1 passed, 0 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\33\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\33\output.xml

@@ -1,14 +1,31 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test Man Qualification :: Verify the Qualification feature of the...
+TestCases.Test EmploymentStatus :: Verify the Employment Status feature of ...
 ==============================================================================
-Add the new work Experience :: Add a new Qualification for the use... | PASS |
+Add the Employment Status :: Adds the new Employment Status for th...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:14
+    T:  Add the Employment Status    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:20
+      Add a Employment Status    Employment_Status=Part Timessfrhd
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_EmploymentStatus.robot:24
+      Click the Job    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Job.robot:20
+      Wait Until Element Is Visible    ${job}
+      |  ${job} = xpath=(//div[@class='oxd-topbar-body toggled']//span)[2] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=(//div[@class='oxd-topbar-body toggled']//span)[2]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-TestCases.Test Man Qualification :: Verify the Qualification featu... | PASS |
-1 test, 1 passed, 0 failed
+TestCases.Test EmploymentStatus :: Verify the Employment Status fe... | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-TestCases                                                             | PASS |
-1 test, 1 passed, 0 failed
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\12\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\12\output.xml

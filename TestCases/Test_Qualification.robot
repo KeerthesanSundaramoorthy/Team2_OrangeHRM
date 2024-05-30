@@ -2,10 +2,10 @@
 Documentation   Verify the Qualification feature of the Employee
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Library    DataDriver    file=../TestData/Qualification.xlsx    sheet_name=Sheet1
 Resource    ../Resources/GenericResources.robot
-Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/Configurations.robot
 Resource    ../Resources/Qualifications.robot
 Test Template   Add new Work Experience

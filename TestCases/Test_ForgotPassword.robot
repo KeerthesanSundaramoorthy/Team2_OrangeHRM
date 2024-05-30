@@ -5,7 +5,7 @@ Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/ForgotPasswordResources.robot
 Task Setup    Open the browser with url
-Test Teardown    close browser session
+Test Teardown    Close Browser Session
 
 *** Test Cases ***
 #To validate successful reset password

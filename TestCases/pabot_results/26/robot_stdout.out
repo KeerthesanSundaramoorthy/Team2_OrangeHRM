@@ -1,40 +1,31 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test Qualification :: Verify the Qualification feature of the Emp...
+TestCases.Test Pay :: Verify the Pay Grade feature of the Admin               
 ==============================================================================
-Add the new work Experience                                             
+Add the new Pay Grade :: Verifies the functions of the Pay Grade        
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Qualification.robot:14
-    T:  Add the new work Experience    
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Pay.robot:13
+    T:  Add the new Pay Grade    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Qualification.robot:17
-      Add new Work Experience    
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Pay.robot:19
+      Add a Pay Grade    Pay_Grade=Grade 101
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Qualification.robot:19
-      Click the My Info    
-______________________________________________________________________________
-  
-  Traceback (most recent call last):
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Pay.robot:23
+      Click the Job    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Qualification.robot:14
-    T:  Add the new work Experience    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\Test_Qualification.robot:5
-      Close the Browser    
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Job.robot:20
+      Wait Until Element Is Visible    ${job}
+      |  ${job} = xpath=(//div[@class='oxd-topbar-body toggled']//span)[2] (str)
 ______________________________________________________________________________
 | FAIL |
-User keyword cannot be empty.
-
-Also teardown failed:
-No keyword with name 'Close the Browser' found. Did you mean:
-    SeleniumLibrary.Close Browser
+Element 'xpath=(//div[@class='oxd-topbar-body toggled']//span)[2]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-TestCases.Test Qualification :: Verify the Qualification feature o... | FAIL |
+TestCases.Test Pay :: Verify the Pay Grade feature of the Admin       | FAIL |
 1 test, 0 passed, 1 failed
 ==============================================================================
 TestCases                                                             | FAIL |
 1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\26\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\26\output.xml

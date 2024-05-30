@@ -1,16 +1,32 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test report :: Test to add new Employee                             
+TestCases.Test UserManagement1 :: Verify the User Management feature of the...
 ==============================================================================
-Reports                                                               | PASS |
+Search the Users                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:14
+    T:  Search the Users    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:14
+      Fill Partially the fields and click Search button    ${Username}
+      |  ${Username} = xpath=(//div[@class='oxd-grid-item oxd-grid-item--gutters']//input)[1] (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot:21
+      Click the user management    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\User.robot:22
+      Wait Until Element Is Visible    ${user_management}
+      |  ${user_management} = xpath=(//div[@class='oxd-topbar-body toggled']//span)[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=(//div[@class='oxd-topbar-body toggled']//span)[1]' not visible after 5 seconds.
 ------------------------------------------------------------------------------
-Reports                                                               | PASS |
-------------------------------------------------------------------------------
-TestCases.Test report :: Test to add new Employee                     | PASS |
-2 tests, 2 passed, 0 failed
+TestCases.Test UserManagement1 :: Verify the User Management featu... | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-TestCases                                                             | PASS |
-2 tests, 2 passed, 0 failed
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  E:\Git\Team2_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\32\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\32\output.xml

@@ -14,20 +14,19 @@ ${password}    admin123
 
 *** Test Cases ***
 Delete Employee   
-    [Tags]    regression
+    [Tags]    Regression
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait    5
-    LoginResources.verify the valid credentials
     PIMResources.Click on PIM Button
     PIMResources.click on Employee_list_button
-    PIMResources.click on delete button
-    PIMResources.Click the Yes Button
+    PIMResources.click on the delete button
+    PIMResources.Click on the Yes Button
     PIMResources.Verify the employee is deleted
 
 Edit Employee Details
+    [Tags]    Regression
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait    5
-    LoginResources.verify the valid credentials
     PIMResources.Click on PIM Button
     PIMResources.click on Employee_list_button
     PIMResources.click on edit button

@@ -1,0 +1,69 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test validAddEmployee :: Test to add new Employee                   
+==============================================================================
+Add Employee                                                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:14
+    T:  Add Employee    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:24
+      Add Employee    fname=AZX    mname=BYZ    lname=ZCV
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:33
+      click on save button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\PIMResources.robot:107
+      Element Text Should Be    ${success_message}    Successfully Updated
+      |  ${success_message} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.
+------------------------------------------------------------------------------
+Add Employee                                                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:14
+    T:  Add Employee    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:24
+      Add Employee    fname=aaa    mname=bbb    lname=ccc
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:33
+      click on save button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\PIMResources.robot:107
+      Element Text Should Be    ${success_message}    Successfully Updated
+      |  ${success_message} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+The text of element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' should have been 'Successfully Updated' but it was 'Successfully Saved'.
+------------------------------------------------------------------------------
+Add Employee                                                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:14
+    T:  Add Employee    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:24
+      Add Employee    fname=min    mname=    lname=user
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_validAddEmployee.robot:33
+      click on save button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\PIMResources.robot:107
+      Element Text Should Be    ${success_message}    Successfully Updated
+      |  ${success_message} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+The text of element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' should have been 'Successfully Updated' but it was 'Successfully Saved'.
+------------------------------------------------------------------------------
+TestCases.Test validAddEmployee :: Test to add new Employee           | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+TestCases                                                             | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\37\output.xml

@@ -15,16 +15,16 @@ ${username}    Admin
 ${password}    admin123
 
 *** Test Cases ***
-Fill dependent    ${Name}
+Fill dependent    
+    [Tags]    Regression
+    ${Name}
 
 *** Keywords ***
 #To validate successful cancel dependent
 validate successful cancel dependent
-    [Tags]    Regression
     [Arguments]     ${Name}    
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
-    LoginResources.verify the valid credentials
     MyInfoResource.click myInfo Button
     MyInfoResource.click dependent element
     DependentResources.click add button

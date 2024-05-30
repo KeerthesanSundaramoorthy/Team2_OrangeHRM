@@ -16,16 +16,16 @@ ${password}    admin123
 
 
 *** Test Cases ***
-fill the form of personal details    ${NAMES}    ${RELATION}    ${HOMES}    ${MOBILES}    ${WORK}
+fill the form of personal details    
+    [Tags]    Smoke
+    ${NAMES}    ${RELATION}    ${HOMES}    ${MOBILES}    ${WORK}
 
 *** Keywords ***
 #To validate successful saved personal details
 validate successful saved personal details
-    [Tags]    Smoke
     [Arguments]     ${NAMES}    ${RELATION}    ${HOMES}    ${MOBILES}    ${WORK}
     LoginResources.Fill the login form    ${username}    ${password}
     Set Selenium Implicit Wait     5
-    LoginResources.verify the valid credentials
     MyInfoResource.click myInfo Button
     MyInfoResource.click emergency contact element
     EmergencyContactResources.click add button

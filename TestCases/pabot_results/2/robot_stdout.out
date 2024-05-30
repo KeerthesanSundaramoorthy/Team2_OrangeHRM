@@ -1,16 +1,69 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test General :: Verify the General Information feature of the Org...
+TestCases.Test AddEmployee :: Test for Add Employee                           
 ==============================================================================
-Verify the Text Box is enabled :: Verifies the text box is enabled    | PASS |
+Add new Employee                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:13
+    T:  Add new Employee    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:20
+      Add new Employee    fname=AZX    mname=BYZ    lname=ZCV
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:30
+      click on save button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\PIMResources.robot:107
+      Element Text Should Be    ${success_message}    Successfully Updated
+      |  ${success_message} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+The text of element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' should have been 'Successfully Updated' but it was 'Successfully Saved'.
 ------------------------------------------------------------------------------
-Edit the Organization Name :: Verify the Organization name can be ... | PASS |
+Add new Employee                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:13
+    T:  Add new Employee    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:20
+      Add new Employee    fname=aaa    mname=bbb    lname=ccc
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:30
+      click on save button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\PIMResources.robot:107
+      Element Text Should Be    ${success_message}    Successfully Updated
+      |  ${success_message} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+The text of element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' should have been 'Successfully Updated' but it was ''.
 ------------------------------------------------------------------------------
-TestCases.Test General :: Verify the General Information feature o... | PASS |
-2 tests, 2 passed, 0 failed
+Add new Employee                                                        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:13
+    T:  Add new Employee    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:20
+      Add new Employee    fname=min    mname=    lname=user
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_AddEmployee.robot:30
+      click on save button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\PIMResources.robot:107
+      Element Text Should Be    ${success_message}    Successfully Updated
+      |  ${success_message} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+The text of element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' should have been 'Successfully Updated' but it was 'Successfully Saved'.
+------------------------------------------------------------------------------
+TestCases.Test AddEmployee :: Test for Add Employee                   | FAIL |
+3 tests, 0 passed, 3 failed
 ==============================================================================
-TestCases                                                             | PASS |
-2 tests, 2 passed, 0 failed
+TestCases                                                             | FAIL |
+3 tests, 0 passed, 3 failed
 ==============================================================================
-Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\2\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\2\output.xml
