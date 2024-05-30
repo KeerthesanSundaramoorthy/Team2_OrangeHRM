@@ -1,14 +1,26 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
+<<<<<<< Updated upstream
 TestCases.Test Pay :: Verify the Pay Grade feature of the Admin               
+=======
+TestCases.Test ContactDetails :: Test contact details to my info              
+>>>>>>> Stashed changes
 ==============================================================================
 Add the new Pay Grade :: Verifies the functions of the Pay Grade      | PASS |
 ------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 TestCases.Test Pay :: Verify the Pay Grade feature of the Admin       | PASS |
+=======
+TestCases.Test ContactDetails :: Test contact details to my info      | PASS |
+>>>>>>> Stashed changes
 1 test, 1 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
+<<<<<<< Updated upstream
 Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\6\output.xml
+=======
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\6\output.xml
+>>>>>>> Stashed changes

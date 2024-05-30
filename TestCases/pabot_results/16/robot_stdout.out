@@ -1,0 +1,18 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test InvalidAddEmployee :: Test to add new Employee with invalid ...
+==============================================================================
+Invalid details for Add Employee                                      | PASS |
+------------------------------------------------------------------------------
+Invalid details for Add Employee                                      | PASS |
+------------------------------------------------------------------------------
+Invalid details for Add Employee                                      | PASS |
+------------------------------------------------------------------------------
+TestCases.Test InvalidAddEmployee :: Test to add new Employee with... | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\16\output.xml

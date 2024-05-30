@@ -1,0 +1,27 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Location :: Verify the Search feature of the Organization      
+==============================================================================
+Search a Organization based on the Location :: Searches the Organi...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Location.robot:14
+    T:  Search a Organization based on the Location    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Location.robot:20
+      Search a Organization    Name=Texas R&D    City=Texas
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Location.robot:27
+      Click the search button    
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Click the search button' found.
+------------------------------------------------------------------------------
+TestCases.Test Location :: Verify the Search feature of the Organi... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\19\output.xml

@@ -1,6 +1,7 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
+<<<<<<< Updated upstream
 TestCases.Test Action :: Verifies the My Action feature of the Admin          
 ==============================================================================
 Verify the Time at Work Feature :: Verifies the Punch out time pag... | PASS |
@@ -11,8 +12,21 @@ Verify the Candidates review :: Verifies the Candidate page is opened | PASS |
 ------------------------------------------------------------------------------
 TestCases.Test Action :: Verifies the My Action feature of the Admin  | PASS |
 3 tests, 3 passed, 0 failed
+=======
+TestCases.Test EmployeeList :: Test for Employee List                         
+==============================================================================
+Employee Information                                                  1 Records Found
+| PASS |
+------------------------------------------------------------------------------
+TestCases.Test EmployeeList :: Test for Employee List                 | PASS |
+1 test, 1 passed, 0 failed
+>>>>>>> Stashed changes
 ==============================================================================
 TestCases                                                             | PASS |
 3 tests, 3 passed, 0 failed
 ==============================================================================
+<<<<<<< Updated upstream
 Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\10\output.xml
+=======
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\10\output.xml
+>>>>>>> Stashed changes

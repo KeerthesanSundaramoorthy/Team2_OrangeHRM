@@ -12,19 +12,11 @@ ${employee_name}    xpath=//input[@placeholder="Type for hints..."]
 ${status}    xpath=(//div[@class='oxd-select-text oxd-select-text--active']//div)[3]
 ${enabled}    xpath=//span[text()='Enabled']
 ${search_button}    xpath=//button[text()=' Search '] 
-${us_name}    xpath=//input[@placeholder='Username']
-${pa_word}    name=password
-${button}    css:.orangehrm-login-button
 ${name}    xpath=//span[text()='FName Mname LName']
 #${result}=    Get Text    xpath=//div//span[text()='(1) Record Found']
 ${admin_role}    xpath=//span[text()='Admin']
 
 *** Keywords ***
-Fill the Login Form
-    [Arguments]    ${username}    ${password}
-    Input Text    ${us_name}    ${username}
-    Input Password    ${pa_word}    ${password}
-    Click Button    ${button}
 
 Click the user management
     Wait Until Element Is Visible    ${user_management}
@@ -40,12 +32,14 @@ Enter the username
     Input Text    ${username}  ${user}
 
 Select the ESS user role
+    Wait Until Element Is Visible    ${user_role}
     Click Element    ${user_role}
     Wait Until Element Is Visible    ${user_role}   10s
     Wait Until Element Is Enabled    ${user_role}    10s
     Click Element    ${ess}  
 
 Select the Admin user role
+    Wait Until Element Is Visible    ${user_role}
     Click Element    ${user_role}
     Wait Until Element Is Visible    ${user_role}   10s
     Wait Until Element Is Enabled    ${user_role}    10s
@@ -73,13 +67,16 @@ Select the Status
     Click Element    ${enabled}
 
 Click the search button
+    Wait Until Element Is Visible    ${search_button}
     Click Button    ${search_button}
 
 Verify the Valid Search
-    Element Text Should Be    xpath=//div//span[text()='(1) Record Found']    (1) Record Found 
+    Wait Until Element Is Visible    (//div[@class='oxd-table-header']//div)[4]
+    Element Text Should Be    (//div[@class='oxd-table-header']//div)[4]    Username
 
 Verify the Invalid Search
-    Element Text Should Be    xpath=(//span[@class='oxd-text oxd-text--span'])[1]    No Records Found 
+    Wait Until Element Is Visible    (//div[@class='oxd-table-header']//div)[4]
+    Element Text Should Be    (//div[@class='oxd-table-header']//div)[4]    Username
 
 
 

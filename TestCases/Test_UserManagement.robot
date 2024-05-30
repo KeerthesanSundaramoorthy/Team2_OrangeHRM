@@ -4,8 +4,9 @@ Library    SeleniumLibrary
 Library    DataDriver    file=../TestData/UserDetails.xlsx    sheet_name=Sheet1   
 Resource    ../Resources/GenericResources.robot
 Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Test Template    Fill all the fields and click Search button
 
 *** Test Cases ***
@@ -18,7 +19,7 @@ Search the Users
 
 Fill all the fields and click Search button
     [Arguments]    ${Condition}    ${user}    ${emp_name}
-    Fill the Login Form    Admin    admin123
+    LoginResources.Fill the Login Form    Admin    admin123
     Click the Admin button
     Click the user management
     Click the users

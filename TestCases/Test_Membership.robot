@@ -2,10 +2,10 @@
 Documentation   Verify the Membership feature 
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Library    DataDriver    file=../TestData/Qualification.xlsx    sheet_name=Sheet2
 Resource    ../Resources/GenericResources.robot
-Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/Qualifications.robot
 Resource    ../Resources/Membership.robot
 Test Template   Add a new membership
@@ -27,7 +27,7 @@ Add a new membership
     Select the appropriate Subscription
     Enter the valid amount    ${amount_text}
     Select the appropriate Currency
-    Select the appropriate Commence Date    ${commence_date}
-    Select the appropriate Renewal Date    ${renewal_date}
+    Select the appropriate Commence Date    2023-12-05
+    Select the appropriate Renewal Date    2024-11-01
     Click the Save button
     Verify the success message is displayed

@@ -1,78 +1,28 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
-TestCases.Test Job :: Verify the Job feature of the Admin                     
+TestCases.Test CandidateSearch :: Test for Candidate Search                   
 ==============================================================================
-Add the new job :: Verifies the new Job is added                        
+Candidate Search                                                        
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:14
-    T:  Add the new job    
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot:16
+    T:  Candidate Search    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:19
-      Add a new job    condition=Valid    job_Title=Car    job_Des=Wood Works    job_Note=Super Field
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot:21
+      Click on Recruitment Icon    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:26
-      '${condition}'=='Valid'    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:32
-      Verify the success message is displayed    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\Resources\GenericResources.robot:39
-      Element Text Should Be    ${success_saved}    Successfully Saved
-      |  ${success_saved} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\RecruitmentResources.robot:22
+      Click Link    ${recruitment_icon}
+      |  ${recruitment_icon} = xpath:(//a[@class="oxd-main-menu-item"])[5] (str)
 ______________________________________________________________________________
 | FAIL |
-Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.
+Link with locator 'xpath:(//a[@class="oxd-main-menu-item"])[5]' not found.
 ------------------------------------------------------------------------------
-Add the new job :: Verifies the new Job is added                        
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:14
-    T:  Add the new job    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:19
-      Add a new job    condition=Partial    job_Title=Carpe    job_Des=    job_Note=
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:42
-      '${condition}'=='Partial'    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:46
-      Verify the success message is displayed    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\Resources\GenericResources.robot:39
-      Element Text Should Be    ${success_saved}    Successfully Saved
-      |  ${success_saved} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.
-------------------------------------------------------------------------------
-Add the new job :: Verifies the new Job is added                      | PASS |
-------------------------------------------------------------------------------
-Add the new job :: Verifies the new Job is added                        
-  Traceback (most recent call last):
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:14
-    T:  Add the new job    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:19
-      Add a new job    condition=Delete    job_Title=    job_Des=    job_Note=
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\TestCases\Test_Job.robot:21
-      Fill the Login Form    Admin    admin123
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  D:\Team2_OrangeHRM\Resources\User.robot:25
-      Input Text    ${us_name}    ${username}
-      |  ${us_name} = xpath=//input[@placeholder='Username'] (str)
-      |  ${username} = Admin (str)
-______________________________________________________________________________
-| FAIL |
-Element with locator 'xpath=//input[@placeholder='Username']' not found.
-------------------------------------------------------------------------------
-TestCases.Test Job :: Verify the Job feature of the Admin             | FAIL |
-4 tests, 1 passed, 3 failed
+TestCases.Test CandidateSearch :: Test for Candidate Search           | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 TestCases                                                             | FAIL |
-4 tests, 1 passed, 3 failed
+1 test, 0 passed, 1 failed
 ==============================================================================
-Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\3\output.xml
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\3\output.xml

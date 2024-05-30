@@ -1,0 +1,31 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Membership :: Verify the Membership feature                    
+==============================================================================
+Add the new membership :: Add a new membership for the users with ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Membership.robot:14
+    T:  Add the new membership    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Membership.robot:20
+      Add a new membership    amount_text=4011    commence_date=2023-22-05    renewal_date=2023-22-07
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Membership.robot:33
+      Verify the success message is displayed    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\GenericResources.robot:41
+      Element Text Should Be    ${success_saved}    Successfully Saved
+      |  ${success_saved} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.
+------------------------------------------------------------------------------
+TestCases.Test Membership :: Verify the Membership feature            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\24\output.xml

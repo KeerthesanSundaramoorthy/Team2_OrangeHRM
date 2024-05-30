@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T22:28:41.001658" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test Action" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Action.robot">
+<test id="s1-s1-t1" name="Verify the Time at Work Feature" line="12">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T22:28:41.578046" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T22:28:41.571015" elapsed="2.335145"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T22:28:43.908666" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T22:28:43.907481" elapsed="83.889747"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T22:30:07.803840" elapsed="0.053913"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T22:30:07.857753" elapsed="0.004322"/>
+</kw>
+<status status="PASS" start="2024-05-28T22:28:41.571015" elapsed="86.291060"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T22:30:07.870304" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<msg time="2024-05-28T22:30:13.127334" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-28T22:30:13.128364" level="FAIL">Element with locator 'xpath://input[@name='username']' not found.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-28T22:30:07.866297" elapsed="5.270544">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>xpath://input[@type='password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T22:30:13.140516" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-28T22:30:13.140516" elapsed="0.000000"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<status status="FAIL" start="2024-05-28T22:30:07.862075" elapsed="5.278441">Element with locator 'xpath://input[@name='username']' not found.</status>
+</kw>
+<kw name="Click the Clock Icon" owner="Dashboard">
+<status status="NOT RUN" start="2024-05-28T22:30:13.140516" elapsed="0.000000"/>
+</kw>
+<kw name="Verify the Punch out page is opened" owner="Dashboard">
+<status status="NOT RUN" start="2024-05-28T22:30:13.140516" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T22:30:13.146542" elapsed="2.246886"/>
+</kw>
+<status status="PASS" start="2024-05-28T22:30:13.146542" elapsed="2.246886"/>
+</kw>
+<doc>Verifies the Punch out time page is opened</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2024-05-28T22:28:41.571015" elapsed="93.822413">Element with locator 'xpath://input[@name='username']' not found.</status>
+</test>
+<test id="s1-s1-t2" name="Verify the Pending review" line="19">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T22:30:15.410186" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T22:30:15.408787" elapsed="1.848628"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T22:30:17.259393" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T22:30:17.259393" elapsed="106.478265"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<msg time="2024-05-28T22:32:03.753281" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61FD01F22+60322]
+	(No symbol) [0x00007FF61FC7CE99]
+	(No symbol) [0x00007FF61FB37EBA]
+	(No symbol) [0x00007FF61FB0D5A5]
+	(No symbol) [0x00007FF61FBB36B7]
+	(No symbol) [0x00007FF61FBCB331]
+	(No symbol) [0x00007FF61FBABFC3]
+	(No symbol) [0x00007FF61FB79617]
+	(No symbol) [0x00007FF61FB7A211]
+	GetHandleVerifier [0x00007FF62001946D+3301613]
+	GetHandleVerifier [0x00007FF620063693+3605267]
+	GetHandleVerifier [0x00007FF620059410+3563664]
+	GetHandleVerifier [0x00007FF61FDB42F6+790390]
+	(No symbol) [0x00007FF61FC874DF]
+	(No symbol) [0x00007FF61FC833D4]
+	(No symbol) [0x00007FF61FC83562]
+	(No symbol) [0x00007FF61FC72F6F]
+	BaseThreadInitThunk [0x00007FFE55DA257D+29]
+	RtlUserThreadStart [0x00007FFE56C2AA48+40]
+</msg>
+<msg time="2024-05-28T22:32:03.753281" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61FD01F22+60322]
+	(No symbol) [0x00007FF61FC7CE99]
+	(No symbol) [0x00007FF61FB37EBA]
+	(No symbol) [0x00007FF61FB0D5A5]
+	(No symbol) [0x00007FF61FBB36B7]
+	(No symbol) [0x00007FF61FBCB331]
+	(No symbol) [0x00007FF61FBABFC3]
+	(No symbol) [0x00007FF61FB79617]
+	(No symbol) [0x00007FF61FB7A211]
+	GetHandleVerifier [0x00007FF62001946D+3301613]
+	GetHandleVerifier [0x00007FF620063693+3605267]
+	GetHandleVerifier [0x00007FF620059410+3563664]
+	GetHandleVerifier [0x00007FF61FDB42F6+790390]
+	(No symbol) [0x00007FF61FC874DF]
+	(No symbol) [0x00007FF61FC833D4]
+	(No symbol) [0x00007FF61FC83562]
+	(No symbol) [0x00007FF61FC72F6F]
+	BaseThreadInitThunk [0x00007FFE55DA257D+29]
+	RtlUserThreadStart [0x00007FFE56C2AA48+40]
+</msg>
+<doc>Maximizes current browser window.</doc>
+<status status="FAIL" start="2024-05-28T22:32:03.737658" elapsed="0.031248">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61FD01F22+60322]
+	(No symbol) [0x00007FF61FC7CE99]
+	(No symbol) [0x00007FF61FB37EBA]
+	(No symbol) [0x00007FF61FB0D5A5]
+	(No symbol) [0x00007FF61FBB36B7]
+	(No symbol) [0x00007FF61FBCB331]
+	(No symbol) [0x00007FF61FBABFC3]
+	(No symbol) [0x00007FF61FB79617]
+	(No symbol) [0x00007FF61FB7A211]
+	GetHandleVerifier [0x00007FF62001946D+3301613]
+	GetHandleVerifier [0x00007FF620063693+3605267]
+	GetHandleVerifier [0x00007FF620059410+3563664]
+	GetHandleVerifier [0x00007FF61FDB42F6+790390]
+	(No symbol) [0x00007FF61FC874DF]
+	(No symbol) [0x00007FF61FC833D4]
+	(No symbol) [0x00007FF61FC83562]
+	(No symbol) [0x00007FF61FC72F6F]
+	BaseThreadInitThunk [0x00007FFE55DA257D+29]
+	RtlUserThreadStart [0x00007FFE56C2AA48+40]
+</status>
+</kw>

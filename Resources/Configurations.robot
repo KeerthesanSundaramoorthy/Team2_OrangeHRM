@@ -3,7 +3,7 @@ Documentation   The Resource contains the elements of the Employment Status of t
 Library    SeleniumLibrary
 
 *** Variables ***
-${configurations}    xpath=(//ul[@data-v-5327b38a]//span)[5]
+${configurations}    xpath=(//span[@class='oxd-topbar-body-nav-tab-item'])[5]
 ${email_config}    xpath=(//ul[@class='oxd-dropdown-menu']//a)[1]
 ${checkbox}    xpath=(//div[@class='oxd-radio-wrapper']//span)[3]
 ${enable}    xpath=//input[@type='checkbox']/following-sibling::span

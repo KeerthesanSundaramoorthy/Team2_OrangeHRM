@@ -1,14 +1,26 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
+<<<<<<< Updated upstream
 TestCases.Test Qualification :: Verify the Qualification feature of the Emp...
+=======
+TestCases.Test Depedent save :: Test dependent to my info                     
+>>>>>>> Stashed changes
 ==============================================================================
 Add the new work Experience :: Add the new work experience for the... | PASS |
 ------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 TestCases.Test Qualification :: Verify the Qualification feature o... | PASS |
+=======
+TestCases.Test Depedent save :: Test dependent to my info             | PASS |
+>>>>>>> Stashed changes
 1 test, 1 passed, 0 failed
 ==============================================================================
 TestCases                                                             | PASS |
 1 test, 1 passed, 0 failed
 ==============================================================================
+<<<<<<< Updated upstream
 Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\7\output.xml
+=======
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\7\output.xml
+>>>>>>> Stashed changes

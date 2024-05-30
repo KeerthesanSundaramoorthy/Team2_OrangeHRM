@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T01:09:46.649629" rpa="false" schemaversion="5">
 <suite id="s1" name="TestCases" source="D:\Team2_OrangeHRM\TestCases">
 <suite id="s1-s1" name="Test UserManagement1" source="D:\Team2_OrangeHRM\TestCases\Test_UserManagement1.robot">
@@ -19,10 +20,33 @@
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
 <status status="PASS" start="2024-05-28T01:09:54.371671" elapsed="0.479640"/>
+=======
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T12:11:54.803567" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test EmployeeLeaveList" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_EmployeeLeaveList.robot">
+<test id="s1-s1-t1" name="List the employess on leave" line="16">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:55.546813" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T12:11:55.526376" elapsed="2.731018"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:58.260524" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T12:11:58.257394" elapsed="4.217856"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T12:12:02.476605" elapsed="0.153389"/>
+>>>>>>> Stashed changes
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2024-05-28T01:09:54.853239" elapsed="0.009125"/>
 </kw>
 <status status="PASS" start="2024-05-28T01:09:47.223101" elapsed="7.639263"/>
@@ -45,16 +69,72 @@
 <status status="FAIL" start="2024-05-28T01:09:46.708018" elapsed="10.926726"/>
 </suite>
 <status status="FAIL" start="2024-05-28T01:09:46.681880" elapsed="10.954317"/>
+=======
+<status status="PASS" start="2024-05-28T12:12:02.632424" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:55.526376" elapsed="7.106048"/>
+</kw>
+<kw name="Get count of employees on leave" owner="EmployeeLeaveList">
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:07.662721" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>${employee_list_parent}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:02.635126" elapsed="5.027595"/>
+</kw>
+<return>
+<value>${count}</value>
+<status status="PASS" start="2024-05-28T12:12:07.662721" elapsed="0.000000"/>
+</return>
+<msg time="2024-05-28T12:12:07.667193" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<status status="PASS" start="2024-05-28T12:12:02.635126" elapsed="5.032067"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${count} Employees on leave</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-05-28T12:12:07.667193" elapsed="0.000000"/>
+</kw>
+<arg>${count} == 0</arg>
+<arg>Log To Console</arg>
+<arg>${count} Employees on leave</arg>
+<arg>ELSE</arg>
+<arg>EmployeeLeaveList.Log employee leave records</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-05-28T12:12:07.667193" elapsed="0.001506"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T12:12:07.668699" elapsed="2.296784"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:12:07.668699" elapsed="2.296784"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-05-28T12:11:55.526376" elapsed="14.439107"/>
+</test>
+<doc>Test for Recruitment in employees on leave</doc>
+<status status="PASS" start="2024-05-28T12:11:54.892782" elapsed="15.072701"/>
+</suite>
+<status status="PASS" start="2024-05-28T12:11:54.843950" elapsed="15.121533"/>
+>>>>>>> Stashed changes
 </suite>
 <statistics>
 <total>
 <stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">regression</stat>
 </tag>
 <suite>
+<<<<<<< Updated upstream
 <stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
 <stat pass="0" fail="1" skip="0" id="s1-s1" name="Test UserManagement1">TestCases.Test UserManagement1</stat>
+=======
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test EmployeeLeaveList">TestCases.Test EmployeeLeaveList</stat>
+>>>>>>> Stashed changes
 </suite>
 </statistics>
 <errors>

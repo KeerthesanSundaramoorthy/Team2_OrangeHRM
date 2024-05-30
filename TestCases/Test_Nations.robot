@@ -2,10 +2,10 @@
 Documentation   Add the New Nationality of the Admin
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Library    DataDriver    file=../TestData/Pay_Grade.xlsx    sheet_name=Sheet4
 Resource    ../Resources/GenericResources.robot
-Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/Nations.robot
 Test Template   Add the new Nation
 

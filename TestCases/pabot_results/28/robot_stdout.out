@@ -1,0 +1,32 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Test Qualification :: Verify the Qualification feature of the Emp...
+==============================================================================
+Add the new work Experience :: Add the new work experience for the...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Qualification.robot:14
+    T:  Add the new work Experience    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Qualification.robot:20
+      Add new Work Experience    com_text=Smart Cliff    job_text=Tester    from_dat=2023-22-05    to_dat=2023-22-07    comment_text=Done a ISTQB Certification
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Qualification.robot:28
+      Enter the From Date    ${from_dat}
+      |  ${from_dat} = 2023-22-05 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Qualifications.robot:44
+      Wait Until Element Is Visible    ${from_date}
+      |  ${from_date} = xpath=(//input[@placeholder='yyyy-dd-mm'])[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=(//input[@placeholder='yyyy-dd-mm'])[1]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+TestCases.Test Qualification :: Verify the Qualification feature o... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\28\output.xml

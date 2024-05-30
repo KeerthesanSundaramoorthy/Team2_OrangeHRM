@@ -1,7 +1,11 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
+<<<<<<< Updated upstream
 TestCases.Test UserManagement :: Verify the User Management feature of the ...
+=======
+TestCases.Test EmergencyContact :: Test emergency contact to my info page     
+>>>>>>> Stashed changes
 ==============================================================================
 Search the Users :: Search the Users with valid and invalid cases       
   Traceback (most recent call last):
@@ -24,6 +28,7 @@ ______________________________________________________________________________
 | FAIL |
 Element with locator 'xpath=//div//span[text()='(1) Record Found']' not found.
 ------------------------------------------------------------------------------
+<<<<<<< Updated upstream
 Search the Users :: Search the Users with valid and invalid cases     | PASS |
 ------------------------------------------------------------------------------
 Search the Users :: Search the Users with valid and invalid cases       
@@ -49,8 +54,16 @@ The text of element 'xpath=(//span[@class='oxd-text oxd-text--span'])[1]' should
 ------------------------------------------------------------------------------
 TestCases.Test UserManagement :: Verify the User Management featur... | FAIL |
 3 tests, 1 passed, 2 failed
+=======
+TestCases.Test EmergencyContact :: Test emergency contact to my in... | PASS |
+1 test, 1 passed, 0 failed
+>>>>>>> Stashed changes
 ==============================================================================
 TestCases                                                             | FAIL |
 3 tests, 1 passed, 2 failed
 ==============================================================================
+<<<<<<< Updated upstream
 Output:  D:\Team2_OrangeHRM\TestCases\pabot_results\8\output.xml
+=======
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\8\output.xml
+>>>>>>> Stashed changes

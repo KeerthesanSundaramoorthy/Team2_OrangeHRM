@@ -2,10 +2,10 @@
 Documentation    Verify the Employment Status feature of the Admin
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Library    DataDriver    file=../TestData/Pay_Grade.xlsx    sheet_name=Sheet2
 Resource    ../Resources/GenericResources.robot
-Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/Job.robot
 Resource    ../Resources/Employment.robot
 Test Template   Add a Employment Status

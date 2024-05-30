@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T01:09:41.442843" rpa="false" schemaversion="5">
 <suite id="s1" name="TestCases" source="D:\Team2_OrangeHRM\TestCases">
 <suite id="s1-s1" name="Test UserManagement" source="D:\Team2_OrangeHRM\TestCases\Test_UserManagement.robot">
@@ -19,17 +20,46 @@
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
 <status status="PASS" start="2024-05-28T01:09:51.189605" elapsed="0.091987"/>
+=======
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T12:11:47.218496" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test EmergencyContact" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_EmergencyContact.robot">
+<test id="s1-s1-t1" name="fill the form of personal details" line="19">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:49.264228" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T12:11:49.264228" elapsed="2.307828"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:51.572056" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T12:11:51.572056" elapsed="3.533237"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T12:11:55.109477" elapsed="0.062235"/>
+>>>>>>> Stashed changes
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2024-05-28T01:09:51.281592" elapsed="0.003655"/>
 </kw>
 <status status="PASS" start="2024-05-28T01:09:43.622870" elapsed="7.662377"/>
+=======
+<status status="PASS" start="2024-05-28T12:11:55.171712" elapsed="0.008133"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:49.264228" elapsed="5.919765"/>
+>>>>>>> Stashed changes
 </kw>
 <kw name="Fill all the fields and click Search button">
 <kw name="Fill the Login Form" owner="User">
 <kw name="Input Text" owner="SeleniumLibrary">
+<<<<<<< Updated upstream
 <msg time="2024-05-28T01:09:51.285247" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
 <arg>${us_name}</arg>
 <arg>${username}</arg>
@@ -49,6 +79,27 @@
 <arg>${button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
 <status status="PASS" start="2024-05-28T01:09:52.187542" elapsed="1.695862"/>
+=======
+<msg time="2024-05-28T12:11:55.193747" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:55.189931" elapsed="0.839716"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:56.029647" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg time="2024-05-28T12:11:56.125279" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@type='password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:56.029647" elapsed="0.310412"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:56.340059" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:56.340059" elapsed="1.846902"/>
+>>>>>>> Stashed changes
 </kw>
 <arg>Admin</arg>
 <arg>admin123</arg>
@@ -96,6 +147,7 @@
 <kw name="Enter the username" owner="User">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${username}</arg>
+<<<<<<< Updated upstream
 <doc>Waits until the element ``locator`` is visible.</doc>
 <status status="PASS" start="2024-05-28T01:09:57.633031" elapsed="0.736008"/>
 </kw>
@@ -253,10 +305,15 @@
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
 <status status="PASS" start="2024-05-28T01:10:18.667839" elapsed="1.264172"/>
+=======
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-28T12:11:55.187291" elapsed="3.001886"/>
+>>>>>>> Stashed changes
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>5</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
+<<<<<<< Updated upstream
 <status status="PASS" start="2024-05-28T01:10:19.935023" elapsed="0.089612"/>
 </kw>
 <status status="PASS" start="2024-05-28T01:10:10.490060" elapsed="9.534575"/>
@@ -269,6 +326,9 @@
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <status status="PASS" start="2024-05-28T01:10:20.028155" elapsed="2.832899"/>
+=======
+<status status="PASS" start="2024-05-28T12:11:58.189177" elapsed="0.007898"/>
+>>>>>>> Stashed changes
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
 <msg time="2024-05-28T01:10:22.862717" level="INFO">Typing password into text field 'name=password'.</msg>
@@ -290,6 +350,7 @@
 </kw>
 <kw name="Click the Admin button" owner="GenericResources">
 <kw name="Click Element" owner="SeleniumLibrary">
+<<<<<<< Updated upstream
 <msg time="2024-05-28T01:10:27.643042" level="INFO">Clicking element 'css:a[href="/web/index.php/admin/viewAdminModule"]'.</msg>
 <arg>${admin}</arg>
 <doc>Click the element identified by ``locator``.</doc>
@@ -308,6 +369,23 @@
 <arg>${user_management}</arg>
 <doc>Click the element identified by ``locator``.</doc>
 <status status="PASS" start="2024-05-28T01:10:33.202134" elapsed="0.404246"/>
+=======
+<msg time="2024-05-28T12:11:58.198584" level="INFO">Clicking element 'xpath://span[text()='My Info']'.</msg>
+<arg>${myInfo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:58.198584" elapsed="2.129146"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:58.197075" elapsed="2.130655"/>
+</kw>
+<kw name="click emergency contact element" owner="MyInfoResource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:00.329750" level="INFO">Clicking link 'xpath://a[text()='Emergency Contacts']'.</msg>
+<arg>${emergency_contact}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:00.329750" elapsed="2.088202"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:12:00.327730" elapsed="2.090222"/>
+>>>>>>> Stashed changes
 </kw>
 <status status="PASS" start="2024-05-28T01:10:32.535713" elapsed="1.071119"/>
 </kw>
@@ -391,6 +469,7 @@
 </kw>
 <kw name="Click the search button" owner="User">
 <kw name="Click Button" owner="SeleniumLibrary">
+<<<<<<< Updated upstream
 <msg time="2024-05-28T01:10:35.865480" level="INFO">Clicking button 'xpath=//button[text()=' Search ']'.</msg>
 <arg>${search_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
@@ -658,6 +737,94 @@
 <status status="FAIL" start="2024-05-28T01:09:41.557105" elapsed="88.752810"/>
 </suite>
 <status status="FAIL" start="2024-05-28T01:09:41.490617" elapsed="88.819298"/>
+=======
+<msg time="2024-05-28T12:12:02.423907" level="INFO">Clicking button 'xpath:(//button[@type="button"])[3]'.</msg>
+<arg>${add}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:02.421400" elapsed="0.519272"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:12:02.417952" elapsed="0.522720"/>
+</kw>
+<kw name="Fill the details" owner="EmergencyContactResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:02.942681" level="INFO">Typing text 'Suvetha' into text field 'xpath=(//div[@data-v-957b4417]//input)[1]'.</msg>
+<arg>${Name}</arg>
+<arg>${names}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:02.942681" elapsed="0.164123"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:03.106804" level="INFO">Typing text 'sister' into text field 'xpath=(//div[@data-v-957b4417]//input)[2]'.</msg>
+<arg>${Relationship}</arg>
+<arg>${relation}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:03.106804" elapsed="0.188443"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:03.297536" level="INFO">Typing text '25085' into text field 'xpath=(//div[@data-v-957b4417]//input)[3]'.</msg>
+<arg>${home}</arg>
+<arg>${home_tele}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:03.295247" elapsed="0.147410"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:03.442657" level="INFO">Typing text '7339446896' into text field 'xpath=(//div[@data-v-957b4417]//input)[4]'.</msg>
+<arg>${mobile}</arg>
+<arg>${mob}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:03.442657" elapsed="0.191207"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:03.635380" level="INFO">Typing text '1234567890' into text field 'xpath=(//div[@data-v-957b4417]//input)[5]'.</msg>
+<arg>${work_telephone}</arg>
+<arg>${work_tele}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:03.635380" elapsed="0.285477"/>
+</kw>
+<arg>${NAMES}</arg>
+<arg>${RELATION}</arg>
+<arg>${HOMES}</arg>
+<arg>${MOBILES}</arg>
+<arg>${WORK}</arg>
+<status status="PASS" start="2024-05-28T12:12:02.940672" elapsed="0.982449"/>
+</kw>
+<kw name="Click Save Button" owner="EmergencyContactResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:12:03.924268" level="INFO">Clicking button 'xpath:(//button[text()=" Save "])[1]'.</msg>
+<arg>${save}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:12:03.924268" elapsed="0.078428"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${success_save}</arg>
+<arg>Successfully Updated</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-05-28T12:12:04.006427" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:12:03.923121" elapsed="0.083306"/>
+</kw>
+<arg>NAMES=Suvetha</arg>
+<arg>RELATION=sister</arg>
+<arg>HOMES=25085</arg>
+<arg>MOBILES=7339446896</arg>
+<arg>WORK=1234567890</arg>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-05-28T12:11:55.185022" elapsed="8.821405"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T12:12:04.007936" elapsed="2.531102"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:12:04.007936" elapsed="2.531102"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:49.264228" elapsed="17.274810"/>
+</test>
+<doc>Test emergency contact to my info page</doc>
+<status status="PASS" start="2024-05-28T12:11:47.276718" elapsed="19.263882"/>
+</suite>
+<status status="PASS" start="2024-05-28T12:11:47.241227" elapsed="19.300749"/>
+>>>>>>> Stashed changes
 </suite>
 <statistics>
 <total>

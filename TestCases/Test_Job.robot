@@ -2,21 +2,22 @@
 Documentation    Verify the Job feature of the Admin
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Library    DataDriver    file=../TestData/Job_Details.xlsx    sheet_name=Sheet1
 Resource    ../Resources/GenericResources.robot
-Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/Job.robot
 Test Template    Add a new job
 
 *** Test Cases ***
 
 Add the new job
+    [Tags]    Smoke
     [Documentation]     Verifies the new Job is added    
     ${condition}    ${job_Title}    ${job_Des}    ${job_Note}
 
 *** Keywords ***
-Add a new job
+Add a new job   
     [Arguments]    ${condition}    ${job_Title}    ${job_Des}    ${job_Note}
     Fill the Login Form    Admin    admin123
     Click the Admin button

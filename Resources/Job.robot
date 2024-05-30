@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 Resource    ../Resources/GenericResources.robot
 
 *** Variables ***
-${job}    xpath=(//i[@class='oxd-icon bi-chevron-down']/ancestor::span)[2]
+${job}    xpath=(//div[@class='oxd-topbar-body']//span)[2]
 ${job_titles}    xpath=(//ul[@class='oxd-dropdown-menu']//li)[1]
 ${add_button}    xpath=//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--secondary"]
 ${job_text}    xpath=(//div[@data-v-957b4417]//input)[1]
@@ -40,18 +40,23 @@ Enter the Job Note
     Input Text    ${jb_note}    ${Job_Note}
 
 Click the Cancel button
+    Wait Until Element Is Visible    ${cancel_button}    10s
     Click Button    ${cancel_button}
 
 Verify the previous page
+    Wait Until Element Is Visible    ${trash}    10s
     Element Should Be Visible    ${trash}
 
 Click the Delete Button
+    Wait Until Element Is Visible    ${trash}    10s
     Click Element    ${trash}
 
 Click the Yes Button
+    Wait Until Element Is Visible    ${yes_del}    10s
     Click Button    ${yes_del}
 
 Verify the Job is deleted
+    Wait Until Element Is Visible    ${success_deleted}    10s
     Element Should Be Visible    ${success_deleted}
 
 

@@ -2,10 +2,11 @@
 Documentation    Verify the User Management feature of the Admin
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Library    DataDriver    file=../TestData/Name.csv    encoding=utf_8    dialect=unix
 Resource    ../Resources/GenericResources.robot
-Resource    ../Resources/AdminResource.robot
+Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Test Template    Fill Partially the fields and click Search button
 
 
@@ -22,3 +23,4 @@ Fill Partially the fields and click Search button
     Enter the username    ${Username}
     Select the Status
     Click the search button
+    Verify the Invalid Search

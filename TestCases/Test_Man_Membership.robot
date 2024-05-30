@@ -2,9 +2,9 @@
 Documentation   Verify the Membership feature 
 Library    SeleniumLibrary
 Test Setup    Open the Browser with URL
-Test Teardown    Close the Browser
+Test Teardown    Close Browser Session
 Resource    ../Resources/GenericResources.robot
-Resource    ../Resources/User.robot
+Resource    ../Resources/LoginResources.robot
 Resource    ../Resources/Qualifications.robot
 Resource    ../Resources/Membership.robot
 
