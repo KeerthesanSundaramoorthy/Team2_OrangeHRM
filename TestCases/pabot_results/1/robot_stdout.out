@@ -1,6 +1,7 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
+<<<<<<< Updated upstream
 TestCases.Test ForgotPassword :: test forgot password to login page           
 ==============================================================================
 validate successful reset password                                    | PASS |
@@ -14,3 +15,34 @@ TestCases                                                             | PASS |
 2 tests, 2 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml
+=======
+TestCases.Test Action :: Verifies the My Action feature of the Admin          
+==============================================================================
+Verify the Time at Work Feature :: Verifies the Punch out time pag... | PASS |
+------------------------------------------------------------------------------
+Verify the Pending review :: Verifies the My Review page is opened      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Action.robot:19
+    T:  Verify the Pending review    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_Action.robot:23
+      Click the Pending self review    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  F:\Git_Clone_Orange\Team2_OrangeHRM\Resources\Dashboard.robot:23
+      Wait Until Element Is Visible    ${pending}
+      |  ${pending} = xpath=(//div[@class='orangehrm-todo-list']//p)[1] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=(//div[@class='orangehrm-todo-list']//p)[1]' not visible after 5 seconds.
+------------------------------------------------------------------------------
+Verify the Candidates review :: Verifies the Candidate page is opened | PASS |
+------------------------------------------------------------------------------
+TestCases.Test Action :: Verifies the My Action feature of the Admin  | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\1\output.xml
+>>>>>>> Stashed changes

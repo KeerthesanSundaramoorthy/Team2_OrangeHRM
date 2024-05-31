@@ -1,6 +1,7 @@
 ==============================================================================
 TestCases                                                                     
 ==============================================================================
+<<<<<<< Updated upstream
 TestCases.Test ChangePassword :: test search to dashboard page                
 ==============================================================================
 validate successful change password                                   | PASS |
@@ -16,3 +17,18 @@ TestCases                                                             | PASS |
 3 tests, 3 passed, 0 failed
 ==============================================================================
 Output:  C:\Users\SM\Desktop\Team02_OrangeHRM\Team2_OrangeHRM\TestCases\pabot_results\0\output.xml
+=======
+TestCases.Test DeleteandEditRecord :: Test for Delete and edit record on em...
+==============================================================================
+Delete Employee                                                       | PASS |
+------------------------------------------------------------------------------
+Edit Employee Details                                                 | PASS |
+------------------------------------------------------------------------------
+TestCases.Test DeleteandEditRecord :: Test for Delete and edit rec... | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\pabot_results\0\output.xml
+>>>>>>> Stashed changes

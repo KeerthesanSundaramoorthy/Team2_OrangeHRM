@@ -9,10 +9,13 @@ Resource    ../Resources/PIMResources.robot
 Test Template    Employee Information 
 
 *** Test Cases ***
-Employee Information    ${emp_name}    ${emp_id}    ${emp_status}    ${include}    ${sup_name}    ${job_title}    ${sub_unit}
+Employee Information    
+    [Tags]    Smoke   
+    ${emp_name}    ${emp_id}    ${emp_status}    ${include}    ${sup_name}    ${job_title}    ${sub_unit}
 
 *** Keywords ***
 
+<<<<<<< Updated upstream
 Employee Information 
     Input Text    xpath://input[@placeholder="Username"]    Admin
     Input Password    xpath://input[@placeholder="Password"]    admin123
@@ -32,6 +35,14 @@ Employee Information with name and id
     PIMResources.Click on PIM Button
     PIMResources.click on Employee_list_button
     [Arguments]    ${Employee_Name}	${Employee_Id}	${Employee_Status}    ${Job_Title}    ${Sub_Unit}
+=======
+Employee Information
+    [Arguments]    ${Employee_Name}    ${Employee_Id}
+    LoginResources.Fill the login form    ${username}    ${password}
+    Set Selenium Implicit Wait    5
+    PIMResources.Click on PIM Button
+    PIMResources.click on Employee_list_button
+>>>>>>> Stashed changes
     PIMResources.Fill the Employee Information with name and id   ${Employee_Name}    ${Employee_Id}
     PIMResources.Click on search button
 

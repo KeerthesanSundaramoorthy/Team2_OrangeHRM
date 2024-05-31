@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-28T12:11:32.584821" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1" name="Test ContactDetails" source="F:\Git_Clone_Orange\Team2_OrangeHRM\TestCases\Test_ContactDetails.robot">
+<test id="s1-s1-t1" name="fill contact details" line="18">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:34.397998" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-28T12:11:34.395490" elapsed="2.216646"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:36.612136" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-28T12:11:36.612136" elapsed="3.874449"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-28T12:11:40.486585" elapsed="0.033273"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T12:11:40.519858" elapsed="0.001935"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:34.395490" elapsed="6.126303"/>
+</kw>
+<kw name="validate successful saved contact details">
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:40.528254" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:40.528254" elapsed="0.550761"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:41.080214" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg time="2024-05-28T12:11:41.125076" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@type='password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:41.079015" elapsed="0.129677"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:41.208692" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:41.208692" elapsed="1.286160"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-28T12:11:40.526349" elapsed="1.968503"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-28T12:11:42.494852" elapsed="0.005547"/>
+</kw>
+<kw name="click myInfo Button" owner="MyInfoResource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:42.502734" level="INFO">Clicking element 'xpath://span[text()='My Info']'.</msg>
+<arg>${myInfo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:42.501561" elapsed="1.696909"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:42.501561" elapsed="1.696909"/>
+</kw>
+<kw name="click contact details element" owner="MyInfoResource">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:44.198470" level="INFO">Clicking link 'xpath://a[text()='Contact Details']'.</msg>
+<arg>${contact_details}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:44.198470" elapsed="1.934148"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:44.198470" elapsed="1.934148"/>
+</kw>
+<kw name="Fill the details" owner="ContactDetailsResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:46.137292" level="INFO">Typing text 'Gandhi' into text field 'xpath:(//div[@data-v-957b4417]/input)[1]'.</msg>
+<arg>${street1}</arg>
+<arg>${srt1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:46.136284" elapsed="0.540773"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:46.677057" level="INFO">Typing text 'Nehru' into text field 'xpath:(//div[@data-v-957b4417]/input)[2]'.</msg>
+<arg>${street2}</arg>
+<arg>${srt2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:46.677057" elapsed="0.127612"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:46.804669" level="INFO">Typing text 'Salem' into text field 'xpath:(//div[@data-v-957b4417]/input)[3]'.</msg>
+<arg>${city}</arg>
+<arg>${cty}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:46.804669" elapsed="0.160143"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:46.964812" level="INFO">Typing text 'Tamilnadu' into text field 'xpath:(//div[@data-v-957b4417]/input)[4]'.</msg>
+<arg>${state}</arg>
+<arg>${ste}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:46.964812" elapsed="0.130786"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:47.100983" level="INFO">Typing text '636306' into text field 'xpath:(//div[@data-v-957b4417]/input)[5]'.</msg>
+<arg>${zip_code}</arg>
+<arg>${zip}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.100983" elapsed="0.116069"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:47.218496" level="INFO">Typing text '25085' into text field 'xpath:(//div[@data-v-957b4417]/input)[6]'.</msg>
+<arg>${home}</arg>
+<arg>${hme}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.218496" elapsed="0.141741"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:47.360237" level="INFO">Typing text '7339446896' into text field 'xpath:(//div[@data-v-957b4417]/input)[7]'.</msg>
+<arg>${mobile}</arg>
+<arg>${mob}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.360237" elapsed="0.107006"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:47.467243" level="INFO">Typing text '123456789' into text field 'xpath:(//div[@data-v-957b4417]/input)[8]'.</msg>
+<arg>${work}</arg>
+<arg>${wrk}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.467243" elapsed="0.107324"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:47.574567" level="INFO">Typing text 'moon@gmail.com' into text field 'xpath:(//div[@data-v-957b4417]/input)[9]'.</msg>
+<arg>${work_email}</arg>
+<arg>${w_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.574567" elapsed="0.147189"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:47.721756" level="INFO">Typing text 'good@gmail.com' into text field 'xpath:(//div[@data-v-957b4417]/input)[10]'.</msg>
+<arg>${other_email}</arg>
+<arg>${o_email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.721756" elapsed="0.116497"/>
+</kw>
+<arg>${Srts1}</arg>
+<arg>${Srts2}</arg>
+<arg>${City}</arg>
+<arg>${States}</arg>
+<arg>${Zip_codes}</arg>
+<arg>${Homes}</arg>
+<arg>${Mobiles}</arg>
+<arg>${Works}</arg>
+<arg>${Work_emails}</arg>
+<arg>${Other_emails}</arg>
+<status status="PASS" start="2024-05-28T12:11:46.132618" elapsed="1.707643"/>
+</kw>
+<kw name="select country" owner="ContactDetailsResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:47.840261" level="INFO">Clicking element 'xpath://div[@data-v-67d2aedf]'.</msg>
+<arg>${drop_down}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.840261" elapsed="0.135908"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${drop_down}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-28T12:11:47.976169" elapsed="0.029920"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${drop_down}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-28T12:11:48.006089" elapsed="0.025837"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:48.031926" level="INFO">Clicking element 'xpath://span[text()='Aruba']'.</msg>
+<arg>${country}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:48.031926" elapsed="0.069774"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:47.840261" elapsed="0.261439"/>
+</kw>
+<kw name="Click Save Button" owner="ContactDetailsResources">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-28T12:11:48.101700" level="INFO">Clicking button 'xpath://button[@type="submit"]'.</msg>
+<arg>${save}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-28T12:11:48.101700" elapsed="0.090278"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${success_save}</arg>
+<arg>Successfully Updated</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-05-28T12:11:48.191978" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:48.101700" elapsed="0.090278"/>
+</kw>
+<arg>Srts1=Gandhi</arg>
+<arg>Srts2=Nehru</arg>
+<arg>City=Salem</arg>
+<arg>States=Tamilnadu</arg>
+<arg>Zip_codes=636306</arg>
+<arg>Homes=25085</arg>
+<arg>Mobiles=7339446896</arg>
+<arg>Works=123456789</arg>
+<arg>Work_emails=moon@gmail.com</arg>
+<arg>Other_emails=good@gmail.com</arg>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-05-28T12:11:40.521793" elapsed="7.670185"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-28T12:11:48.195263" elapsed="2.341108"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:48.194487" elapsed="2.341884"/>
+</kw>
+<status status="PASS" start="2024-05-28T12:11:34.385460" elapsed="16.150911"/>
+</test>
+<doc>Test contact details to my info</doc>
+<status status="PASS" start="2024-05-28T12:11:32.649819" elapsed="17.887797"/>
+</suite>
+<status status="PASS" start="2024-05-28T12:11:32.618198" elapsed="17.927055"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test ContactDetails">TestCases.Test ContactDetails</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

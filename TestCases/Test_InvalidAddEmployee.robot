@@ -9,13 +9,20 @@ Resource    ../Resources/PIMResources.robot
 Test Template      Invalid details for Add Employee
 
 *** Test Cases ***
-Invalid details for Add Employee    ${first_name}    ${middle_name}    ${last_name}
+Invalid details for Add Employee    
+    [Tags]    Smoke
+    ${first_name}    ${middle_name}    ${last_name}
 
 *** Keywords ***
 Invalid details for Add Employee
+<<<<<<< Updated upstream
+=======
+    [Arguments]    ${invalid_fname}	${invalid_mname}	${invalid_lname}    
+    LoginResources.Fill the login form    ${username}    ${password}
+    Set Selenium Implicit Wait    5
+>>>>>>> Stashed changes
     PIMResources.Click on PIM Button
     PIMResources.click on add_employee
-    [Arguments]    ${invalid_fname}	${invalid_mname}	${invalid_lname}    
     PIMResources.Fill the details to add employee    ${invalid_fname}	${invalid_mname}	${invalid_lname}
     Wait Until Element Is Visible    ${save_btn}    4s
     PIMResources.click on save button for invalid
