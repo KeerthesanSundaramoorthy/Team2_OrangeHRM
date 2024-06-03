@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-29T00:45:26.163337" rpa="false" schemaversion="5">
+<suite id="s1" name="Team2 OrangeHRM" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM">
+<suite id="s1-s1" name="TestCases" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1-s1" name="Test Search" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Search.robot">
+<test id="s1-s1-s1-t1" name="validate valid search credentials" line="19">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:28.123930" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-29T00:45:28.114496" elapsed="10.273708"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:38.390705" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-29T00:45:38.389195" elapsed="13.836159"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-29T00:45:52.233345" elapsed="0.528995"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-29T00:45:52.763955" elapsed="0.020024"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:45:28.110497" elapsed="24.673482"/>
+</kw>
+<kw name="Fill the login form" owner="LoginResources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:52.792085" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<arg>xpath://input[@name='username']</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:52.790798" elapsed="1.960245"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:54.754142" level="INFO">Typing password into text field 'xpath://input[@type='password']'.</msg>
+<msg time="2024-05-29T00:45:55.015610" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@type='password']</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:54.751768" elapsed="0.537119"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:55.292905" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:55.290050" elapsed="0.315793"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-05-29T00:45:52.786916" elapsed="2.818927"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-29T00:45:55.606934" elapsed="0.019701"/>
+</kw>
+<kw name="verify the valid credentials" owner="LoginResources">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:55.631533" level="INFO">Verifying element 'xpath://h6[text()="Dashboard"]' contains exact text 'Dashboard'.</msg>
+<arg>${dashBoard}</arg>
+<arg>Dashboard</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-29T00:45:55.630538" elapsed="2.390988"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:45:55.628512" elapsed="2.393994"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:58.027095" level="INFO">Typing text 'Recruitment' into text field 'xpath://input[@placeholder="Search"]'.</msg>
+<arg>${search}</arg>
+<arg>Recruitment</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:58.024025" elapsed="0.725536"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:58.755149" level="INFO">Verifying element 'xpath://a[@href="/web/index.php/recruitment/viewRecruitmentModule"]' contains exact text 'Recruitment'.</msg>
+<arg>${Recruitment}</arg>
+<arg>Recruitment</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-05-29T00:45:58.751803" elapsed="0.956611"/>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-29T00:45:59.711419" elapsed="52.191202"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:45:59.709409" elapsed="52.194233"/>
+</kw>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-05-29T00:45:28.090945" elapsed="83.813694"/>
+</test>
+<doc>test search to dashboard page</doc>
+<status status="PASS" start="2024-05-29T00:45:26.400057" elapsed="85.532596"/>
+</suite>
+<status status="PASS" start="2024-05-29T00:45:26.392047" elapsed="85.593454"/>
+</suite>
+<status status="PASS" start="2024-05-29T00:45:26.296001" elapsed="85.693549"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Team2 OrangeHRM">Team2 OrangeHRM</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TestCases">Team2 OrangeHRM.TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test Search">Team2 OrangeHRM.TestCases.Test Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,31 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test CandidateSearch :: Test for Candidate Search   
+==============================================================================
+Candidte Search                                                         
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot:14
+    T:  Candidte Search    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot:14
+      Candidate Search    ${Job_Title}
+      |  ${Job_Title} = <Unable to define variable value>
+______________________________________________________________________________
+| FAIL |
+Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test CandidateSearch :: Test for Candida... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Team2 OrangeHRM                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\2\output.xml

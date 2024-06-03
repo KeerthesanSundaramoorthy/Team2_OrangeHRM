@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-29T00:41:31.295764" rpa="false" schemaversion="5">
+<suite id="s1" name="Team2 OrangeHRM" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM">
+<suite id="s1-s1" name="TestCases" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1-s1" name="Test CandidateSearch" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot">
+<test id="s1-s1-s1-t1" name="Candidte Search" line="14">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:41:34.609882" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-29T00:41:34.609882" elapsed="23.308297"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:41:58.070726" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-29T00:41:58.042259" elapsed="11.323436"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-29T00:42:09.689310" elapsed="1.227560"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-29T00:42:10.939272" elapsed="1.458495"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:41:34.609882" elapsed="37.801715"/>
+</kw>
+<kw name="Candidate Search">
+<msg time="2024-05-29T00:42:12.568846" level="FAIL">Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}</msg>
+<arg>${Job_Title}</arg>
+<status status="FAIL" start="2024-05-29T00:42:12.494153" elapsed="0.074693">Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}</status>
+</kw>
+<kw name="Close Browser Session" owner="GenericResources" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-29T00:42:12.696119" elapsed="30.154641"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:42:12.687607" elapsed="30.163153"/>
+</kw>
+<status status="FAIL" start="2024-05-29T00:41:34.601048" elapsed="68.251146">Variable '${Job_Title}' not found. Did you mean:
+    ${Job_Title_Xpath}</status>
+</test>
+<doc>Test for Candidate Search</doc>
+<status status="FAIL" start="2024-05-29T00:41:31.415934" elapsed="71.466101"/>
+</suite>
+<status status="FAIL" start="2024-05-29T00:41:31.415934" elapsed="71.541152"/>
+</suite>
+<status status="FAIL" start="2024-05-29T00:41:31.376233" elapsed="71.582803"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Team2 OrangeHRM">Team2 OrangeHRM</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Team2 OrangeHRM.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Test CandidateSearch">Team2 OrangeHRM.TestCases.Test CandidateSearch</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-29T00:41:34.567137" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_CandidateSearch.robot", line 0</msg>
+<msg time="2024-05-29T00:41:34.567137" level="ERROR">In source file:
+  File "C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\..\TestData\Candidate_Details.xlsx", line 0</msg>
+<msg time="2024-05-29T00:41:34.601048" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Worksheet named 'candidate' not found</msg>
+</errors>
+</robot>

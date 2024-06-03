@@ -1,0 +1,31 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test Pay :: Verify the Pay Grade feature of the A...
+==============================================================================
+Add the new Pay Grade :: Verifies the functions of the Pay Grade        
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Pay.robot:13
+    T:  Add the new Pay Grade    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Pay.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test Pay :: Verify the Pay Grade feature... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Team2 OrangeHRM                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\26\output.xml

@@ -1,0 +1,4 @@
+${Condition}	${Job_title}	${Job_des}	${Job_note}
+Valid	Carpenter	Wood Works	Super Field
+Partial	Carpenter		
+Cancel	Carpenter	Wood Works	Super Field

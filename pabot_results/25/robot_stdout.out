@@ -1,0 +1,66 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test Nations :: Add the New Nationality of the Admin
+==============================================================================
+Add a new Nation :: Add a new Nation for the Organization with all...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:13
+    T:  Add a new Nation    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:19
+      Add the new Nation    condition=new    nation_name=Phillip45786
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:27
+      '${condition}'=='new'    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:28
+      Verify the new nation is added    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\Resources\Nations.robot:26
+      Element Text Should Be    ${assert}    Successfully Saved
+      |  ${assert} = xpath=(//div[@class='oxd-toast-start']//p)[2] (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:13
+    T:  Add a new Nation    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Add a new Nation :: Add a new Nation for the Organization with all...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:13
+    T:  Add a new Nation    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Nations.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test Nations :: Add the New Nationality ... | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Team2 OrangeHRM                                                       | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\25\output.xml

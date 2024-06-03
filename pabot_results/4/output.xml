@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-29T00:41:31.692349" rpa="false" schemaversion="5">
+<suite id="s1" name="Team2 OrangeHRM" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM">
+<suite id="s1-s1" name="TestCases" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1-s1" name="Test Configurations" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Configurations.robot">
+<test id="s1-s1-s1-t1" name="Configuring the email" line="13">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:41:34.648477" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-29T00:41:34.648477" elapsed="46.032704"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:20.879174" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-29T00:42:20.807409" elapsed="0.959805"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-29T00:42:21.777330" elapsed="8.205881"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-29T00:42:30.042332" elapsed="0.136602"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:41:34.638468" elapsed="55.625321"/>
+</kw>
+<kw name="Configuration of the Email">
+<kw name="Fill the Login Form" owner="User">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:31.176636" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>${us_name}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:31.104793" elapsed="0.957538"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:32.067325" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2024-05-29T00:42:32.483259" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${pa_word}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:32.065325" elapsed="0.962152"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:33.030820" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:33.029798" elapsed="2.800505"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2024-05-29T00:42:31.095183" elapsed="4.736111"/>
+</kw>
+<kw name="Click the Admin button" owner="GenericResources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:35.838297" level="INFO">Clicking element 'css:a[href="/web/index.php/admin/viewAdminModule"]'.</msg>
+<arg>${admin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:35.836294" elapsed="2.587987"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:42:35.833298" elapsed="2.595027"/>
+</kw>
+<kw name="Click the Configurations" owner="Configurations">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${configurations}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:42:38.438791" elapsed="0.823571"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:39.273188" level="INFO">Clicking element 'xpath=(//ul[@data-v-5327b38a]//span)[5]'.</msg>
+<arg>${configurations}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:39.266395" elapsed="0.477205"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:42:38.431328" elapsed="1.316856"/>
+</kw>
+<kw name="Click the Email Configurations" owner="Configurations">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${email_config}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:42:39.755178" elapsed="0.435007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:40.194754" level="INFO">Clicking element 'xpath=(//ul[@class='oxd-dropdown-menu']//a)[1]'.</msg>
+<arg>${email_config}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:40.193344" elapsed="0.787848"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:42:39.753421" elapsed="1.228752"/>
+</kw>
+<kw name="Enter the Sent Email id" owner="Configurations">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${sent_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:42:40.986551" elapsed="0.743881"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:41.735231" level="INFO">Typing text 'admin@mail.com' into text field 'xpath=(//div[@data-v-957b4417]//input)[1]'.</msg>
+<arg>${sent_email}</arg>
+<arg>${send_email_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:41.732694" elapsed="0.436041"/>
+</kw>
+<arg>${send_email_id}</arg>
+<status status="PASS" start="2024-05-29T00:42:40.984182" elapsed="1.185549"/>
+</kw>
+<kw name="Click the Send Mail Checkbox" owner="Configurations">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:42:42.170219" elapsed="0.080387"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:42.256850" level="INFO">Clicking element 'xpath=(//div[@class='oxd-radio-wrapper']//span)[3]'.</msg>
+<arg>${checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:42.255886" elapsed="0.163988"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:42:42.170219" elapsed="0.251660"/>
+</kw>
+<kw name="Enable the Send Test Mail" owner="Configurations">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${enable}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:42:42.428133" elapsed="0.066070"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:42.496076" level="INFO">Clicking element 'xpath=//input[@type='checkbox']/following-sibling::span'.</msg>
+<arg>${enable}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:42.496076" elapsed="0.200875"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:42:42.423876" elapsed="0.274099"/>
+</kw>
+<kw name="Enter the Test Email id" owner="Configurations">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${test_email}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:42:42.700678" elapsed="0.108302"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:42.811977" level="INFO">Typing text 'admin@mail.com' into text field 'xpath=(//div[@data-v-957b4417]//input)[5]'.</msg>
+<arg>${test_email}</arg>
+<arg>${test_email_id}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:42.809979" elapsed="0.404935"/>
+</kw>
+<arg>${test_email_id}</arg>
+<status status="PASS" start="2024-05-29T00:42:42.697975" elapsed="0.520931"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${save_button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-05-29T00:42:43.223908" elapsed="0.092193"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:43.318123" level="INFO">Clicking button 'xpath=(//p[@class='oxd-text oxd-text--p orangehrm-form-hint']//following-sibling::button)[2]'.</msg>
+<arg>${save_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:42:43.317122" elapsed="0.354467"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:42:43.219923" elapsed="0.452701"/>
+</kw>
+<kw name="Verify email is sent to mail id" owner="Configurations">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:42:43.680333" level="INFO">Verifying element 'xpath=(//div[@class='oxd-toast-start']//p)[2]' contains exact text 'Test Email Sent'.</msg>
+<msg time="2024-05-29T00:42:49.099107" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-29T00:42:49.108398" level="FAIL">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</msg>
+<arg>${assert}</arg>
+<arg>Test Email Sent</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="FAIL" start="2024-05-29T00:42:43.677341" elapsed="5.532659">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-05-29T00:42:43.674317" elapsed="5.595524">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<arg>send_email_id=admin@mail.com</arg>
+<arg>test_email_id=admin@mail.com</arg>
+<status status="FAIL" start="2024-05-29T00:42:31.075439" elapsed="18.194924">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.</status>
+</kw>
+<kw name="Close the Browser" type="TEARDOWN">
+<msg time="2024-05-29T00:42:49.299396" level="FAIL">No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</msg>
+<status status="FAIL" start="2024-05-29T00:42:49.299396" elapsed="0.000000">No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</status>
+</kw>
+<doc>Configurages and Verifies the email is sent to the mail id</doc>
+<tag>Retest</tag>
+<status status="FAIL" start="2024-05-29T00:41:34.638468" elapsed="74.660928">Element with locator 'xpath=(//div[@class='oxd-toast-start']//p)[2]' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</status>
+</test>
+<doc>Configuration of the Email by the Admin</doc>
+<status status="FAIL" start="2024-05-29T00:41:31.773015" elapsed="77.571488"/>
+</suite>
+<status status="FAIL" start="2024-05-29T00:41:31.762750" elapsed="77.620377"/>
+</suite>
+<status status="FAIL" start="2024-05-29T00:41:31.722463" elapsed="77.665375"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Retest</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Team2 OrangeHRM">Team2 OrangeHRM</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Team2 OrangeHRM.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Test Configurations">Team2 OrangeHRM.TestCases.Test Configurations</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,49 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test Qualification :: Verify the Qualification fe...
+==============================================================================
+Add the new work Experience :: Add the new work experience for the...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Qualification.robot:14
+    T:  Add the new work Experience    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Qualification.robot:20
+      Add new Work Experience    com_text=Smart Cliff    job_text=Tester    from_dat=2023-22-05    to_dat=2023-22-07    comment_text=Done a ISTQB Certification
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Qualification.robot:25
+      Click Add Button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\Resources\Qualifications.robot:27
+      Wait Until Element Is Visible    ${add_but}
+      |  ${add_but} = xpath=(//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--text"])[1] (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Qualification.robot:14
+    T:  Add the new work Experience    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Qualification.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Element 'xpath=(//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--text"])[1]' not visible after 5 seconds.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test Qualification :: Verify the Qualifi... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Team2 OrangeHRM                                                       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\28\output.xml

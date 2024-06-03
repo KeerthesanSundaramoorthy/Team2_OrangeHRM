@@ -11,6 +11,8 @@ ${mobile}              xpath=(//div[@data-v-957b4417]//input)[4]
 ${work_telephone}      xpath=(//div[@data-v-957b4417]//input)[5]
 ${save}                xpath:(//button[text()=" Save "])[1]
 ${success_save}        xpath://p[text()='Successfully Updated']
+${delete}              xpath:(//button[@data-v-f5c763eb])[3]
+${sure}                xpath:(//p[@data-v-7b563373])[3]
 
 
 *** Keywords ***
@@ -22,6 +24,14 @@ Fill the details
     Input Text    ${home}     ${home_tele}
     Input Text    ${mobile}     ${mob}
     Input Text    ${work_telephone}    ${work_tele}
+
+#fill details to mandatory field
+Fill the details to mandatory field
+    [Arguments]    ${names}    ${relation}    ${home_tele}       
+    Input Text    ${Name}     ${names}
+    Input Text    ${Relationship}      ${relation}
+    Input Text    ${home}     ${home_tele}
+   
     
 #clcik add button
 click add button
@@ -31,3 +41,9 @@ click add button
 Click Save Button
     Click Button    ${save}
     Should Contain    ${success_save}    Successfully Updated 
+
+#Click Delete button
+Click delete Button
+    Set Selenium Implicit Wait    3s
+    Click Button    ${delete}
+    

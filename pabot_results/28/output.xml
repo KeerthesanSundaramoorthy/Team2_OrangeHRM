@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-05-29T00:45:16.409557" rpa="false" schemaversion="5">
+<suite id="s1" name="Team2 OrangeHRM" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM">
+<suite id="s1-s1" name="TestCases" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases">
+<suite id="s1-s1-s1" name="Test Qualification" source="C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_Qualification.robot">
+<test id="s1-s1-s1-t1" name="Add the new work Experience" line="14">
+<kw name="Open the browser with url" owner="GenericResources" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:20.687500" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-29T00:45:20.687500" elapsed="13.400450"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:34.090270" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-29T00:45:34.088951" elapsed="10.326775"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-29T00:45:44.446245" elapsed="0.484981"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-29T00:45:44.944244" elapsed="0.078578"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:45:20.687500" elapsed="24.344947"/>
+</kw>
+<kw name="Add new Work Experience">
+<kw name="Fill the Login Form" owner="User">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:46.570536" level="INFO">Typing text 'Admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>${us_name}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:45.446115" elapsed="1.813686"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:47.263123" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2024-05-29T00:45:47.438123" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${pa_word}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:47.260827" elapsed="0.454763"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:47.718618" level="INFO">Clicking button 'css:.orangehrm-login-button'.</msg>
+<arg>${button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:47.716595" elapsed="0.244182"/>
+</kw>
+<arg>Admin</arg>
+<arg>admin123</arg>
+<status status="PASS" start="2024-05-29T00:45:45.169419" elapsed="2.791358"/>
+</kw>
+<kw name="Click the My Info" owner="Qualifications">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${my_info}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:45:47.963806" elapsed="2.341294"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:50.307612" level="INFO">Clicking element 'css:a[href="/web/index.php/pim/viewMyDetails"]'.</msg>
+<arg>${my_info}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:50.306098" elapsed="2.144753"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:45:47.961795" elapsed="4.489056"/>
+</kw>
+<kw name="Click the Qualifications" owner="Qualifications">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${qualifications}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-29T00:45:52.461808" elapsed="0.685703"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:45:53.149609" level="INFO">Clicking link 'css:a[href="/web/index.php/pim/viewQualifications/empNumber/7"]'.</msg>
+<arg>${qualifications}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-29T00:45:53.148808" elapsed="1.696256"/>
+</kw>
+<status status="PASS" start="2024-05-29T00:45:52.453796" elapsed="2.395677"/>
+</kw>
+<kw name="Click Add Button" owner="Qualifications">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-05-29T00:46:01.405556" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-29T00:46:01.514737" level="FAIL">Element 'xpath=(//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--text"])[1]' not visible after 5 seconds.</msg>
+<arg>${add_but}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-05-29T00:45:54.859908" elapsed="6.872471">Element 'xpath=(//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--text"])[1]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${add_but}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-29T00:46:01.739384" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-29T00:45:54.854031" elapsed="6.915312">Element 'xpath=(//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--text"])[1]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Enter the Company Name" owner="Qualifications">
+<arg>${com_text}</arg>
+<status status="NOT RUN" start="2024-05-29T00:46:01.779569" elapsed="0.001002"/>
+</kw>
+<kw name="Enter the Job Title" owner="Qualifications">
+<arg>${job_text}</arg>
+<status status="NOT RUN" start="2024-05-29T00:46:01.792707" elapsed="0.000997"/>
+</kw>
+<kw name="Enter the From Date" owner="Qualifications">
+<arg>${from_dat}</arg>
+<status status="NOT RUN" start="2024-05-29T00:46:01.795700" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the To Date" owner="Qualifications">
+<arg>${to_dat}</arg>
+<status status="NOT RUN" start="2024-05-29T00:46:01.796701" elapsed="0.000996"/>
+</kw>
+<kw name="Enter the Comment" owner="Qualifications">
+<arg>${comment_text}</arg>
+<status status="NOT RUN" start="2024-05-29T00:46:01.797697" elapsed="0.000000"/>
+</kw>
+<kw name="Click the Save button" owner="GenericResources">
+<status status="NOT RUN" start="2024-05-29T00:46:01.800701" elapsed="0.000999"/>
+</kw>
+<kw name="Verify the new qualification is added" owner="Qualifications">
+<status status="NOT RUN" start="2024-05-29T00:46:01.802701" elapsed="0.001994"/>
+</kw>
+<arg>com_text=Smart Cliff</arg>
+<arg>job_text=Tester</arg>
+<arg>from_dat=2023-22-05</arg>
+<arg>to_dat=2023-22-07</arg>
+<arg>comment_text=Done a ISTQB Certification</arg>
+<status status="FAIL" start="2024-05-29T00:45:45.050454" elapsed="16.754241">Element 'xpath=(//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--text"])[1]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Close the Browser" type="TEARDOWN">
+<msg time="2024-05-29T00:46:01.884680" level="FAIL">No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</msg>
+<status status="FAIL" start="2024-05-29T00:46:01.883680" elapsed="0.002524">No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</status>
+</kw>
+<doc>Add the new work experience for the employee with all the fields</doc>
+<tag>Smoke</tag>
+<status status="FAIL" start="2024-05-29T00:45:20.678890" elapsed="41.215040">Element 'xpath=(//button[@type="button"][@class="oxd-button oxd-button--medium oxd-button--text"])[1]' not visible after 5 seconds.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser</status>
+</test>
+<doc>Verify the Qualification feature of the Employee</doc>
+<status status="FAIL" start="2024-05-29T00:45:16.543971" elapsed="45.403452"/>
+</suite>
+<status status="FAIL" start="2024-05-29T00:45:16.534205" elapsed="45.467945"/>
+</suite>
+<status status="FAIL" start="2024-05-29T00:45:16.476128" elapsed="45.530018"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Team2 OrangeHRM">Team2 OrangeHRM</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">Team2 OrangeHRM.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Test Qualification">Team2 OrangeHRM.TestCases.Test Qualification</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

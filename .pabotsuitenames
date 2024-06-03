@@ -1,0 +1,42 @@
+datasources:48cfc797386cfd90a1ffb97be75677d2f10ce3db
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:5563d2ed768fca81bfea0c93812165317a6ebf50
+--suite Team2 OrangeHRM.TestCases.Test Action
+--suite Team2 OrangeHRM.TestCases.Test AddEmployee
+--suite Team2 OrangeHRM.TestCases.Test CandidateSearch
+--suite Team2 OrangeHRM.TestCases.Test ChangePassword
+--suite Team2 OrangeHRM.TestCases.Test Configurations
+--suite Team2 OrangeHRM.TestCases.Test ContactDetails
+--suite Team2 OrangeHRM.TestCases.Test DeleteandEditRecord
+--suite Team2 OrangeHRM.TestCases.Test Depedent save
+--suite Team2 OrangeHRM.TestCases.Test EmergencyContact
+--suite Team2 OrangeHRM.TestCases.Test EmployeeLeaveList
+--suite Team2 OrangeHRM.TestCases.Test EmployeeList
+--suite Team2 OrangeHRM.TestCases.Test EmployeeListWithField
+--suite Team2 OrangeHRM.TestCases.Test EmploymentStatus
+--suite Team2 OrangeHRM.TestCases.Test ForgotPassword
+--suite Team2 OrangeHRM.TestCases.Test General
+--suite Team2 OrangeHRM.TestCases.Test Immigration
+--suite Team2 OrangeHRM.TestCases.Test InvalidAddEmployee
+--suite Team2 OrangeHRM.TestCases.Test InvalidEmployeeDetails
+--suite Team2 OrangeHRM.TestCases.Test Job
+--suite Team2 OrangeHRM.TestCases.Test Location
+--suite Team2 OrangeHRM.TestCases.Test LoginInvalid
+--suite Team2 OrangeHRM.TestCases.Test LoginValid
+--suite Team2 OrangeHRM.TestCases.Test Man Membership
+--suite Team2 OrangeHRM.TestCases.Test Man Qualification
+--suite Team2 OrangeHRM.TestCases.Test Membership
+--suite Team2 OrangeHRM.TestCases.Test Nations
+--suite Team2 OrangeHRM.TestCases.Test Pay
+--suite Team2 OrangeHRM.TestCases.Test PersonalDetails
+--suite Team2 OrangeHRM.TestCases.Test Qualification
+--suite Team2 OrangeHRM.TestCases.Test QuickLaunch
+--suite Team2 OrangeHRM.TestCases.Test Search
+--suite Team2 OrangeHRM.TestCases.Test UserManagement
+--suite Team2 OrangeHRM.TestCases.Test UserManagement1
+--suite Team2 OrangeHRM.TestCases.Test Vacancy
+--suite Team2 OrangeHRM.TestCases.Test dependent cancel
+--suite Team2 OrangeHRM.TestCases.Test logout
+--suite Team2 OrangeHRM.TestCases.Test report
+--suite Team2 OrangeHRM.TestCases.Test validAddEmployee

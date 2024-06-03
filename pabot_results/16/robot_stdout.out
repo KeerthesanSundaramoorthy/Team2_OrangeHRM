@@ -1,0 +1,23 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test InvalidAddEmployee :: Test to add new Employ...
+==============================================================================
+Invalid details for Add Employee                                      | PASS |
+------------------------------------------------------------------------------
+Invalid details for Add Employee                                      | PASS |
+------------------------------------------------------------------------------
+Invalid details for Add Employee                                      | PASS |
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test InvalidAddEmployee :: Test to add n... | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM                                                       | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\16\output.xml

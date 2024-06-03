@@ -1,0 +1,61 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test General :: Verify the General Information fe...
+==============================================================================
+Verify the Text Box is enabled :: Verifies the text box is enabled      
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_General.robot:12
+    T:  Verify the Text Box is enabled    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_General.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Edit the Organization Name :: Verify the Organization name can be ...   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_General.robot:22
+    T:  Edit the Organization Name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_General.robot:25
+      Fill the Login Form    Admin    admin123
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\Resources\User.robot:25
+      Input Text    ${us_name}    ${username}
+      |  ${us_name} = xpath=//input[@placeholder='Username'] (str)
+      |  ${username} = Admin (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_General.robot:22
+    T:  Edit the Organization Name    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\TestCases\Test_General.robot:5
+      Close the Browser    
+______________________________________________________________________________
+| FAIL |
+Element with locator 'xpath=//input[@placeholder='Username']' not found.
+
+Also teardown failed:
+No keyword with name 'Close the Browser' found. Did you mean:
+    SeleniumLibrary.Close Browser
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test General :: Verify the General Infor... | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Team2 OrangeHRM                                                       | FAIL |
+2 tests, 0 passed, 2 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\14\output.xml

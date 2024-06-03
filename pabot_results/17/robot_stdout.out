@@ -1,0 +1,21 @@
+==============================================================================
+Team2 OrangeHRM                                                               
+==============================================================================
+Team2 OrangeHRM.TestCases                                                     
+==============================================================================
+Team2 OrangeHRM.TestCases.Test InvalidEmployeeDetails :: Test for Invalid E...
+==============================================================================
+Employee Information with invalid field                               | PASS |
+------------------------------------------------------------------------------
+Employee Information with invalid field                               | PASS |
+------------------------------------------------------------------------------
+Team2 OrangeHRM.TestCases.Test InvalidEmployeeDetails :: Test for ... | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM.TestCases                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Team2 OrangeHRM                                                       | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Users\SM\Desktop\Project _automation\Team2_OrangeHRM\pabot_results\17\output.xml
